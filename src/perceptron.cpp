@@ -3,14 +3,11 @@
 Perceptron::Perceptron(std::vector<double> weights, double bias, double learningRate)
     : weights(weights), bias(bias), learningRate(learningRate) {}
 
-Perceptron::~Perceptron() {}
-
 double Perceptron::predict(const std::vector<double>& x) const 
 {
     // Dot prodcut for an array of size 2  
     double dot_product = bias;
-    for (int i = 0; i < weights.size(); i++)
-    {
+    for (int i = 0; i < weights.size(); i++) {
         dot_product += weights[i] * x[i];
     }
     // double dot_product = weights[0] * x[0] + weights[1] * x[1] + bias;
@@ -23,10 +20,8 @@ void Perceptron::train(const std::vector<std::vector<double>>& x, const std::vec
     // ensure both arrays are the same size
     if (x.size() != targets.size()) return;
 
-    for (int epoch = 0; epoch < epochs; epoch++)
-    {
-        for (int i = 0; i < x.size(); i++)
-        {
+    for (int epoch = 0; epoch < epochs; epoch++) {
+        for (int i = 0; i < x.size(); i++) {
             double pred = predict(x[i]);
             double error = targets[i] - pred;
             // Update each weight based on the input value

@@ -5,7 +5,7 @@ Perceptron::Perceptron(std::vector<double> weights, double bias, double learning
 
 Perceptron::~Perceptron() {}
 
-double Perceptron::predict(std::vector<double>& x) 
+double Perceptron::predict(const std::vector<double>& x) const 
 {
     // Dot prodcut for an array of size 2  
     double dot_product = bias;
@@ -17,7 +17,7 @@ double Perceptron::predict(std::vector<double>& x)
     return dot_product >= 0 ? 1 : 0;
 }
 
-void Perceptron::train(std::vector<std::vector<double>>& x, std::vector<double>& y, int epochs) 
+void Perceptron::train(const std::vector<std::vector<double>>& x, const std::vector<double>& y, int epochs) 
 {
     // Train the perceptron
     // ensure both arrays are the same size

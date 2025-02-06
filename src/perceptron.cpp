@@ -5,19 +5,41 @@ Perceptron::Perceptron(std::vector<double> weights, double bias, double learning
 
 Perceptron::~Perceptron() {}
 
-double Perceptron::output(std::vector<double> inputs)
+double Perceptron::predict(std::vector<double>& x) 
 {
-    double sum = 0.0f;
-    double threshold = -1 * bias;
-    for (int i = 0; i < inputs.size(); i++)
+    // Dot prodcut for an array of size 2  
+    double dot_product = bias;
+    for (int i = 0; i < weights.size(); i++)
     {
-        sum += inputs[i] * weights[i];
+        dot_product += weights[i] * x[i];
     }
-    
-    return sum >= threshold ? 1 : 0;
+    // double dot_product = weights[0] * x[0] + weights[1] * x[1] + bias;
+    return dot_product >= 0 ? 1 : 0;
 }
 
-void Perceptron::__str__(int verbose)
+void Perceptron::train(std::vector<std::vector<double>>& x, std::vector<double>& y, int epochs) 
+{
+    // Train the perceptron
+    // ensure both arrays are the same size
+    if (x.size() != y.size()) return;
+
+    for (int epoch = 0; epoch < epochs; epoch++)
+    {
+        for (int i = 0; i < x.size(); i++)
+        {
+            double pred = predict(x[i]);
+            double error = y[i] - pred;
+            // Update each weight based on the input value
+            for (int j = 0; j < weights.size(); j++) {
+                weights[j] += learningRate * error * x[i][j];
+            }
+            // Update bias 
+            bias += learningRate * error;
+        }
+    }
+}
+
+void Perceptron::__str__(int verbose) 
 {
     // Printing the weights 
     std::cout << "weights\n";

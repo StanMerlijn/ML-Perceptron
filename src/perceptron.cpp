@@ -17,18 +17,18 @@ double Perceptron::predict(const std::vector<double>& x) const
     return dot_product >= 0 ? 1 : 0;
 }
 
-void Perceptron::train(const std::vector<std::vector<double>>& x, const std::vector<double>& y, int epochs) 
+void Perceptron::train(const std::vector<std::vector<double>>& x, const std::vector<double>& targets, int epochs) 
 {
     // Train the perceptron
     // ensure both arrays are the same size
-    if (x.size() != y.size()) return;
+    if (x.size() != targets.size()) return;
 
     for (int epoch = 0; epoch < epochs; epoch++)
     {
         for (int i = 0; i < x.size(); i++)
         {
             double pred = predict(x[i]);
-            double error = y[i] - pred;
+            double error = targets[i] - pred;
             // Update each weight based on the input value
             for (int j = 0; j < weights.size(); j++) {
                 weights[j] += learningRate * error * x[i][j];

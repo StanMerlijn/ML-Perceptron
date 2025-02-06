@@ -9,7 +9,7 @@ public:
     ~Perceptron();
 
     double predict(const std::vector<double>& x) const;
-    void train(const std::vector<std::vector<double>>& x, const std::vector<double>& y, int epochs);
+    void train(const std::vector<std::vector<double>>& x, const std::vector<double>& targets, int epochs);
     void __str__(int verbose);
     
 private:

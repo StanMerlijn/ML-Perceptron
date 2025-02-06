@@ -5,10 +5,24 @@
 #include "../src/header/perceptron.hpp"
 #include <iostream>
 
-//2. 
-//a. Initialiseer een Perceptron voor elk van de INVERT-, AND- en OR-poorten en test of ze op de juiste manier werken.
-//b. Initialiseer een Perceptron voor een NOR-poort met drie ingangen en test of deze op de juiste manier werkt.
-//c. Initialiseer ook een Perceptron voor een uitgebreider beslissysteem (minimaal 3 inputs, zie bijvoorbeeld Figuur 2.8 uit de reader) en test of deze naar verwachting werkt.
+/**
+ * @file test.cpp
+ * @brief Unit tests for the Perceptron class using the Catch2 framework.
+ *
+ * This file contains a series of test cases to verify the functionality of the Perceptron class.
+ * The tests include training and prediction for various logic gates.
+ *
+ * Test Cases:
+ * - Perceptron for INVERT Gate: Tests the perceptron's ability to learn the INVERT gate.
+ * - Perceptron for AND Gate: Tests the perceptron's ability to learn the AND gate.
+ * - Perceptron for OR Gate: Tests the perceptron's ability to learn the OR gate.
+ * - Perceptron for NOR Gate (3 inputs): Tests the perceptron's ability to learn the NOR gate with 3 inputs.
+ * - Perceptron for 3-input Majority Gate: Tests the perceptron's ability to learn the 3-input Majority gate.
+ * - PerceptronNetwork for the XOR gate with 2 inputs.
+ * - PerceptronNetwork for an half adder.
+ * 
+ * @note The tests use the Catch2 framework for unit testing.
+ */
 
 TEST_CASE("Perceptron for INVERT Gate", "[perceptron]") 
 {

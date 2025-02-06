@@ -3,6 +3,7 @@
 
 #include "catch.hpp"
 #include "../src/header/perceptron.hpp"
+#include "../src/header/perceptronLayer.hpp"
 #include <iostream>
 
 /**
@@ -198,4 +199,41 @@ TEST_CASE("Perceptron for 3-input Majority Gate", "[perceptron]") {
     CHECK(majority_gate.predict(in101) == 1);
     CHECK(majority_gate.predict(in110) == 1);
     CHECK(majority_gate.predict(in111) == 1);
+}
+
+TEST_CASE("PerceptronLayer for AND and OR Gates", "[perceptronLayer]") {
+    // Training data common to both gates:
+    std::vector<std::vector<double>> inputs = {
+        {0, 0}, {0, 1}, {1, 0}, {1, 1}
+    };
+    
+    // AND gate targets: only {1,1} should yield 1.
+    std::vector<double> and_targets = {0, 0, 0, 1};
+    // Create a layer with one neuron (2 inputs) for the AND gate.
+    PerceptronLayer and_layer(1, 2, 0.1);
+    and_layer.train(inputs, and_targets, EPOCHS);
+    
+    // Define input vectors.
+    std::vector<double> in00 = {0, 0};
+    std::vector<double> in01 = {0, 1};
+    std::vector<double> in10 = {1, 0};
+    std::vector<double> in11 = {1, 1};
+
+    // Verify AND gate predictions.
+    CHECK(and_layer.predict(in00)[0] == 0);
+    CHECK(and_layer.predict(in01)[0] == 0);
+    CHECK(and_layer.predict(in10)[0] == 0);
+    CHECK(and_layer.predict(in11)[0] == 1);
+
+    // OR gate targets: all inputs except {0,0} yield 1.
+    std::vector<double> or_targets = {0, 1, 1, 1};
+    // Create a layer with one neuron (2 inputs) for the OR gate.
+    PerceptronLayer or_layer(1, 2, 0.1);
+    or_layer.train(inputs, or_targets, EPOCHS);
+
+    // Verify OR gate predictions.
+    CHECK(or_layer.predict(in00)[0] == 0);
+    CHECK(or_layer.predict(in01)[0] == 1);
+    CHECK(or_layer.predict(in10)[0] == 1);
+    CHECK(or_layer.predict(in11)[0] == 1);
 }

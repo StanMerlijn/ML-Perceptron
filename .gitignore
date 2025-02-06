@@ -32,5 +32,8 @@
 *.app
 
 # Build files
-
 Build/*
+test/Build/*
+
+# zsh
+*.zsh

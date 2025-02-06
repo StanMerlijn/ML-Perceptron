@@ -1,7 +1,6 @@
 #define CATCH_CONFIG_MAIN
 #define EPOCHS 100
 
-// #include "catch_amalgamated.hpp"
 #include "catch.hpp"
 #include "../src/header/perceptron.hpp"
 #include <iostream>
@@ -76,4 +75,33 @@ TEST_CASE("Perceptron for OR Gate", "[perceptron]")
     CHECK(or_gate.predict(in01) == 1);
     CHECK(or_gate.predict(in10) == 1);
     CHECK(or_gate.predict(in11) == 1);
+}
+
+TEST_CASE("Perceptron for NOR Gate (3 inputs)", "[perceptron]") {
+    // Instantiate the perceptron with three weights.
+    Perceptron nor_gate({-0.1, -0.1, -0.1}, 1, 0.1);
+
+    // Training data for a NOR gate with 3 inputs:
+    // Only (0,0,0) should yield 1; all others yield 0.
+    std::vector<std::vector<double>> x = {
+        {0, 0, 0}, {0, 0, 1}, {0, 1, 0}, {1, 0, 0},
+        {1, 1, 0}, {1, 0, 1}, {0, 1, 1}, {1, 1, 1}
+    };
+    std::vector<double> y = {1, 0, 0, 0, 0, 0, 0, 0};
+
+    // Train the perceptron
+    nor_gate.train(x, y, EPOCHS);
+
+    std::vector<double> in000 = {0, 0, 0};
+    std::vector<double> in100 = {1, 0, 0};
+    std::vector<double> in010 = {0, 1, 0};
+    std::vector<double> in001 = {0, 0, 1};
+    std::vector<double> in111 = {1, 1, 1};
+
+    // Test various cases
+    CHECK(nor_gate.predict(in000) == 1);
+    CHECK(nor_gate.predict(in100) == 0);
+    CHECK(nor_gate.predict(in010) == 0);
+    CHECK(nor_gate.predict(in001) == 0);
+    CHECK(nor_gate.predict(in111) == 0);
 }

@@ -105,3 +105,39 @@ TEST_CASE("Perceptron for NOR Gate (3 inputs)", "[perceptron]") {
     CHECK(nor_gate.predict(in001) == 0);
     CHECK(nor_gate.predict(in111) == 0);
 }
+
+TEST_CASE("Perceptron for 3-input Majority Gate", "[perceptron]") {
+    // Instantiate the perceptron with three inputs. Here we choose small positive initial weights
+    // and a negative bias. Adjust these parameters if necessary to speed up convergence.
+    Perceptron majority_gate({0.1, 0.1, 0.1}, -0.2, 0.1);
+
+    // Training data for a majority gate:
+    // Output 1 if at least two inputs are 1, else output 0.
+    std::vector<std::vector<double>> x = {
+        {0, 0, 0}, {0, 0, 1}, {0, 1, 0}, {1, 0, 0}, 
+        {0, 1, 1}, {1, 0, 1}, {1, 1, 0}, {1, 1, 1}  
+    };
+    std::vector<double> y = {0, 0, 0, 0, 1, 1, 1, 1};
+
+    // Train the perceptron
+    majority_gate.train(x, y, EPOCHS);
+
+    // Define input vectors as done in other tests
+    std::vector<double> in000 = {0, 0, 0};
+    std::vector<double> in001 = {0, 0, 1};
+    std::vector<double> in010 = {0, 1, 0};
+    std::vector<double> in100 = {1, 0, 0};
+    std::vector<double> in011 = {0, 1, 1};
+    std::vector<double> in101 = {1, 0, 1};
+    std::vector<double> in110 = {1, 1, 0};
+    std::vector<double> in111 = {1, 1, 1};
+
+    CHECK(majority_gate.predict(in000) == 0);
+    CHECK(majority_gate.predict(in001) == 0);
+    CHECK(majority_gate.predict(in010) == 0);
+    CHECK(majority_gate.predict(in100) == 0);
+    CHECK(majority_gate.predict(in011) == 1);
+    CHECK(majority_gate.predict(in101) == 1);
+    CHECK(majority_gate.predict(in110) == 1);
+    CHECK(majority_gate.predict(in111) == 1);
+}

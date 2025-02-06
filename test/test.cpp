@@ -24,6 +24,50 @@
  * @note The tests use the Catch2 framework for unit testing.
  */
 
+TEST_CASE("Simple Perceptron tests", "[simple perceptron]")
+{
+    // And Gate
+    SimplePerceptron andGate({1.0, 1.0}, -1.5);
+
+    SECTION("Input {0, 0} -> Output 0") {
+        std::vector<double> inputs = {0, 0};
+        REQUIRE(andGate.predict(inputs) == 0);
+    }
+
+    SECTION("Input {0, 1} -> Output 0") {
+        std::vector<double> inputs = {0, 1};
+        REQUIRE(andGate.predict(inputs) == 0);
+    }
+    SECTION("Input {1, 0} -> Output 0") {
+        std::vector<double> inputs = {1, 0};
+        REQUIRE(andGate.predict(inputs) == 0);
+    }
+    SECTION("Input {1, 1} -> Output 1") {
+        std::vector<double> inputs = {1, 1};
+        REQUIRE(andGate.predict(inputs) == 1);
+    }
+
+    // OR gata 
+    SimplePerceptron orGate({1.0, 1.0}, -0.5);
+
+    SECTION("Input {0, 0} -> Output 0") {
+        std::vector<double> inputs = {0, 0};
+        REQUIRE(orGate.predict(inputs) == 0);
+    }
+    SECTION("Input {0, 1} -> Output 1") {
+        std::vector<double> inputs = {0, 1};
+        REQUIRE(orGate.predict(inputs) == 1);
+    }
+    SECTION("Input {1, 0} -> Output 1") {
+        std::vector<double> inputs = {1, 0};
+        REQUIRE(orGate.predict(inputs) == 1);
+    }
+    SECTION("Input {1, 1} -> Output 1") {
+        std::vector<double> inputs = {1, 1};
+        REQUIRE(orGate.predict(inputs) == 1);
+    }
+}
+
 TEST_CASE("Perceptron for INVERT Gate", "[perceptron]") 
 {
     // The perceptron is instantiated with two weights. We use the first weight for the real input

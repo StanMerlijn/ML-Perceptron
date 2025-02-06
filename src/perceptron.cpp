@@ -34,7 +34,7 @@ void Perceptron::train(const std::vector<std::vector<double>>& x, const std::vec
     }
 }
 
-void Perceptron::__str__(int verbose) 
+void Perceptron::__str__(int verbose) const
 {
     // Printing the weights 
     std::cout << "weights\n";

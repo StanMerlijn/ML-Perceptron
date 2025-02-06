@@ -9,7 +9,7 @@ public:
 
     double predict(const std::vector<double>& x) const;
     void train(const std::vector<std::vector<double>>& x, const std::vector<double>& targets, int epochs);
-    void __str__(int verbose);
+    void __str__(int verbose) const;
 
 private:
     std::vector<double> weights;

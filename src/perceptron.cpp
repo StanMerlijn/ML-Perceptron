@@ -48,18 +48,3 @@ void Perceptron::__str__(int verbose) const
         std::cout << "Learning rate = " << learningRate << std::endl;
     }
 }
-
-SimplePerceptron::SimplePerceptron(const std::vector<double>& weights, double bias) 
-    : weights(weights), bias(bias) {}
-
-
-int SimplePerceptron::predict(const std::vector<double>& inputs) const {
-    double total = 0.0;
-    // Calculate weighted sum.
-    for (size_t i = 0; i < inputs.size() && i < weights.size(); ++i) {
-        total += inputs[i] * weights[i];
-    }
-    total += bias;
-    // Activation: return 1 if total is non-negative, otherwise return 0.
-    return (total >= 0) ? 1 : 0;
-}

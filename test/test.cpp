@@ -8,9 +8,9 @@
 
 /**
  * @file test.cpp
- * @brief Unit tests for the Perceptron class using the Catch2 framework.
+ * @brief Unit tests for the Perceptron, PerceptronLayer and PerceptronNetwork classes.
  *
- * This file contains a series of test cases to verify the functionality of the Perceptron class.
+ * This file contains a series of test cases to verify the functionality of the Perceptron and PerceptronLayer classes.
  * The tests include training and prediction for various logic gates.
  *
  * Test Cases:
@@ -19,55 +19,13 @@
  * - Perceptron for OR Gate: Tests the perceptron's ability to learn the OR gate.
  * - Perceptron for NOR Gate (3 inputs): Tests the perceptron's ability to learn the NOR gate with 3 inputs.
  * - Perceptron for 3-input Majority Gate: Tests the perceptron's ability to learn the 3-input Majority gate.
+ * - PerceptronLayer for AND and OR Gates: Tests the PerceptronLayer's ability to learn the AND and OR gates.
  * - PerceptronNetwork for the XOR gate with 2 inputs.
- * - PerceptronNetwork for an half adder.
+ * - PerceptronNetwork for a half adder.
  * 
  * @note The tests use the Catch2 framework for unit testing.
  */
 
-TEST_CASE("Simple Perceptron tests", "[simple perceptron]")
-{
-    // And Gate
-    SimplePerceptron andGate({1.0, 1.0}, -1.5);
-
-    SECTION("Input {0, 0} -> Output 0") {
-        std::vector<double> inputs = {0, 0};
-        REQUIRE(andGate.predict(inputs) == 0);
-    }
-
-    SECTION("Input {0, 1} -> Output 0") {
-        std::vector<double> inputs = {0, 1};
-        REQUIRE(andGate.predict(inputs) == 0);
-    }
-    SECTION("Input {1, 0} -> Output 0") {
-        std::vector<double> inputs = {1, 0};
-        REQUIRE(andGate.predict(inputs) == 0);
-    }
-    SECTION("Input {1, 1} -> Output 1") {
-        std::vector<double> inputs = {1, 1};
-        REQUIRE(andGate.predict(inputs) == 1);
-    }
-
-    // OR gata 
-    SimplePerceptron orGate({1.0, 1.0}, -0.5);
-
-    SECTION("Input {0, 0} -> Output 0") {
-        std::vector<double> inputs = {0, 0};
-        REQUIRE(orGate.predict(inputs) == 0);
-    }
-    SECTION("Input {0, 1} -> Output 1") {
-        std::vector<double> inputs = {0, 1};
-        REQUIRE(orGate.predict(inputs) == 1);
-    }
-    SECTION("Input {1, 0} -> Output 1") {
-        std::vector<double> inputs = {1, 0};
-        REQUIRE(orGate.predict(inputs) == 1);
-    }
-    SECTION("Input {1, 1} -> Output 1") {
-        std::vector<double> inputs = {1, 1};
-        REQUIRE(orGate.predict(inputs) == 1);
-    }
-}
 
 TEST_CASE("Perceptron for INVERT Gate", "[perceptron]") 
 {
@@ -94,7 +52,7 @@ TEST_CASE("Perceptron for AND Gate", "[perceptron]")
 {
     Perceptron and_gate({0.1, 0.1}, 1, 0.1);
 
-    // Initialize the inputs and outpout expected for an AND gate
+    // Initialize the inputs and output expected for an AND gate
     std::vector<std::vector<double>> x = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
     std::vector<double> y = {0,0,0,1};
 
@@ -117,7 +75,7 @@ TEST_CASE("Perceptron for OR Gate", "[perceptron]")
 {
     Perceptron or_gate({0.1, 0.1}, 1, 0.1);
 
-    // Initialize the inputs and outpout expected for an OR gate
+    // Initialize the inputs and output expected for an OR gate
     std::vector<std::vector<double>> x = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
     std::vector<double> y = {0,1,1,1};
 

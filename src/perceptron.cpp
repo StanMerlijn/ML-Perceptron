@@ -37,10 +37,9 @@ void Perceptron::train(const std::vector<std::vector<int>>& inputs, const std::v
 void Perceptron::__str__(int verbose) const
 {
     // Printing the weights 
-    std::cout << "weights\n";
+    std::cout << "weights:\n";
     for (auto i : weights)
         std::cout << i << " ";
-    std::cout << "\n";
 
     // Other info 
     if (verbose >= 1) {

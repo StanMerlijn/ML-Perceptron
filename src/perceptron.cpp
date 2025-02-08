@@ -3,7 +3,7 @@
 Perceptron::Perceptron(std::vector<double> weights, double bias, double learningRate)
     : weights(weights), bias(bias), learningRate(learningRate) {}
 
-double Perceptron::predict(const std::vector<int>& inputs) const 
+int Perceptron::predict(const std::vector<int>& inputs) const 
 {
     // Dot prodcut for an array of size 2  
     double dot_product = bias;

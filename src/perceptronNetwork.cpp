@@ -10,7 +10,7 @@ std::vector<int> PerceptronNetwork::feed_forward(const std::vector<int>& input) 
     std::vector<int> activation = input;
     // Propagate the input through each layer sequentially.
     for (const PerceptronLayer& layer : layers) {
-        activation = layer.feed_forward(activation);
+        activation = layer.predict(activation);
     }
     return activation;
 }

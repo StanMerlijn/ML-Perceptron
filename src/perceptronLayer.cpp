@@ -19,7 +19,7 @@ PerceptronLayer::PerceptronLayer(int numNeurons, int inputDimension, double lear
     }
 }
 
-std::vector<int> PerceptronLayer::feed_forward(const std::vector<int>& input) const 
+std::vector<int> PerceptronLayer::predict(const std::vector<int>& input) const 
 {
     // Predict the output for each perceptron 
     std::vector<int> outputs;

@@ -9,6 +9,7 @@ Student nummer: 1863967
 ## Introduction
 
 ## Installing
+Enter the test dir then
 
 Generate build files:
 
@@ -25,5 +26,5 @@ cmake --build build
 Run the executable:
 
 ```
-./build/MLPerceptron
+./build/MLPerceptronTest
 ```

@@ -196,40 +196,48 @@ TEST_CASE("PerceptronLayer for AND and OR Gates", "[perceptronLayer]") {
     CHECK(and_layer.feed_forward(in11) == out11);
 }
 
-// TEST_CASE("PerceptronNetwork for XOR Gate", "[perceptronNetwork]") {
-//     // Initialize the inputs and output expected for an AND gate
-//     std::vector<std::vector<double>> inputsAnd = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
-//     std::vector<double> targetsAnd = {0,0,0,1};
+TEST_CASE("PerceptronNetwork for the XOR gate with 2 inputs", "[perceptronNetwork]") {
+    // Create a network with two layers: one for the AND gate and one for the OR gate.
+    PerceptronLayer inputLayer(2, 2, 0.1);
+    PerceptronLayer outputLayer(1, 2, 0.1);
 
-//     // Train the AND gate using a PerceptronLayer
-//     PerceptronLayer hidden_layer(2, 2, 0.1);
-//     hidden_layer.train(inputsAnd, targetsAnd, EPOCHS);
+    // Training data for the XOR gate:
+    // Output 1 if inputs are different, else output 0.
+    std::vector<std::vector<double>> inputs = {
+        {0, 0}, {0, 1}, {1, 0}, {1, 1}
+    };
 
-//     // Initialize the inputs and output expected for an OR gate
-//     std::vector<std::vector<double>> inputsOr = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
-//     std::vector<double> targetsOr = {0,1,1,1};
+    // OR and NAND gates for the input layer
+    std::vector<std::vector<double>> targetsInput = {
+        {0, 1, 1, 1},
+        {1, 1, 1, 0}
+    };
 
-//     // Train the OR gate using a PerceptronLayer
-//     PerceptronLayer output_layer(1, 2, 0.1);
-//     output_layer.train(inputsOr, targetsOr, EPOCHS);
-    
-//     // Construct the network from the hidden and output layers.
-//     std::vector<PerceptronLayer> layers = {hidden_layer, output_layer};
-//     PerceptronNetwork network(layers);
+    // And gate for the output layer
+    std::vector<std::vector<double>> targetsOutput = {
+        {0, 0, 0, 1}
+    };
+    // Train the layers
+    inputLayer.train(inputs, targetsInput, EPOCHS);
+    outputLayer.train(inputs, targetsOutput, EPOCHS);
 
-//     // Define XOR training/testing data.
-//     std::vector<std::vector<double>> xor_inputs = {
-//        {0, 0},
-//        {0, 1},
-//        {1, 0},
-//        {1, 1}
-//     };
-//     std::vector<double> xor_expected = {0, 1, 1, 0};
+    PerceptronNetwork xor_network({inputLayer, outputLayer});
 
-//     // Test the network's predictions.
-//     for (int i = 0; i < xor_inputs.size(); ++i) {
-//          std::vector<double> output = network.feed_forward(xor_inputs[i]);
-//          // The network output is a vector with one element.
-//          CHECK(output[0] == xor_expected[i]);
-//     }
-// }
+    // Define input vectors.
+    std::vector<double> in00 = {0, 0};
+    std::vector<double> in01 = {0, 1};
+    std::vector<double> in10 = {1, 0};
+    std::vector<double> in11 = {1, 1};
+
+    // Define expected outputs for the XOR gate.
+    std::vector<double> out00 = {0};
+    std::vector<double> out01 = {1};
+    std::vector<double> out10 = {1};
+    std::vector<double> out11 = {0};
+
+    // Verify network's predictions for the XOR gate.
+    CHECK(xor_network.feed_forward(in00) == out00);
+    CHECK(xor_network.feed_forward(in01) == out01);
+    CHECK(xor_network.feed_forward(in10) == out10);
+    CHECK(xor_network.feed_forward(in11) == out11);
+}

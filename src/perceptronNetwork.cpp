@@ -8,7 +8,6 @@ PerceptronNetwork::PerceptronNetwork(std::vector<PerceptronLayer> layers)
 std::vector<double> PerceptronNetwork::feed_forward(const std::vector<double>& input) const
 {
     std::vector<double> activation = input;
-    
     // Propagate the input through each layer sequentially.
     for (const PerceptronLayer& layer : layers) {
         activation = layer.feed_forward(activation);
@@ -23,7 +22,6 @@ void PerceptronNetwork::__str__(int verbose) const
     for (int i = 0; i < layers.size(); ++i)
     {
         std::cout << "Layer " << i + 1 << ": ";
-        // Assuming that each PerceptronLayer has a __str__ or print method
         layers[i].__str__(verbose);
     }
 }

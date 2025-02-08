@@ -9,7 +9,7 @@ class PerceptronNetwork
 public:
     PerceptronNetwork(std::vector<PerceptronLayer> layers);
 
-    std::vector<double> feed_forward(const std::vector<double>& input) const;
+    std::vector<int> feed_forward(const std::vector<int>& input) const;
     void __str__(int verbose) const;
 
 private:

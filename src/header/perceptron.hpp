@@ -7,8 +7,8 @@ class Perceptron
 public:
     Perceptron(std::vector<double> weights, double bias, double learningRate);
 
-    double predict(const std::vector<double>& x) const;
-    void train(const std::vector<std::vector<double>>& inputs, const std::vector<double>& targets, int epochs);
+    double predict(const std::vector<int>& x) const;
+    void train(const std::vector<std::vector<int>>& inputs, const std::vector<int>& targets, int epochs);
     void __str__(int verbose) const;
 
 private:

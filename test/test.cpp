@@ -36,14 +36,14 @@ TEST_CASE("Perceptron for INVERT Gate", "[perceptron]")
 
     // Training data: for input 0 we expect output 1, and for input 1 we expect output 0.
     // The second element in the input vector is always 0.
-    std::vector<std::vector<double>> x = {{0, 0}, {1, 0}};
-    std::vector<double> y = {1, 0};
+    std::vector<std::vector<int>> x = {{0, 0}, {1, 0}};
+    std::vector<int> y = {1, 0};
 
     // Train the perceptron
     invert_gate.train(x, y, EPOCHS);
     
-    std::vector<double> in1 = {1, 0};
-    std::vector<double> in0 = {0, 0};
+    std::vector<int> in1 = {1, 0};
+    std::vector<int> in0 = {0, 0};
 
     CHECK(invert_gate.predict(in1) == 0);
     CHECK(invert_gate.predict(in0) == 1);
@@ -54,17 +54,17 @@ TEST_CASE("Perceptron for AND Gate", "[perceptron]")
     Perceptron and_gate({0.1, 0.1}, 1, 0.1);
 
     // Initialize the inputs and output expected for an AND gate
-    std::vector<std::vector<double>> x = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
-    std::vector<double> y = {0,0,0,1};
+    std::vector<std::vector<int>> x = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
+    std::vector<int> y = {0,0,0,1};
 
     // Train the perceptron
     and_gate.train(x, y, EPOCHS);
 
     // Test the possible inputs for an AND gate
-    std::vector<double> in00 = {0, 0};
-    std::vector<double> in01 = {0, 1};
-    std::vector<double> in10 = {1, 0};
-    std::vector<double> in11 = {1, 1};
+    std::vector<int> in00 = {0, 0};
+    std::vector<int> in01 = {0, 1};
+    std::vector<int> in10 = {1, 0};
+    std::vector<int> in11 = {1, 1};
 
     CHECK(and_gate.predict(in00) == 0);
     CHECK(and_gate.predict(in01) == 0);
@@ -77,17 +77,17 @@ TEST_CASE("Perceptron for OR Gate", "[perceptron]")
     Perceptron or_gate({0.1, 0.1}, 1, 0.1);
 
     // Initialize the inputs and output expected for an OR gate
-    std::vector<std::vector<double>> x = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
-    std::vector<double> y = {0,1,1,1};
+    std::vector<std::vector<int>> x = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
+    std::vector<int> y = {0,1,1,1};
 
     // Train the perceptron
     or_gate.train(x, y, EPOCHS);
 
     // Test the possible inputs for an OR gate
-    std::vector<double> in00 = {0, 0};
-    std::vector<double> in01 = {0, 1};
-    std::vector<double> in10 = {1, 0};
-    std::vector<double> in11 = {1, 1};
+    std::vector<int> in00 = {0, 0};
+    std::vector<int> in01 = {0, 1};
+    std::vector<int> in10 = {1, 0};
+    std::vector<int> in11 = {1, 1};
 
     CHECK(or_gate.predict(in00) == 0);
     CHECK(or_gate.predict(in01) == 1);
@@ -101,20 +101,20 @@ TEST_CASE("Perceptron for NOR Gate (3 inputs)", "[perceptron]") {
 
     // Training data for a NOR gate with 3 inputs:
     // Only (0,0,0) should yield 1; all others yield 0.
-    std::vector<std::vector<double>> x = {
+    std::vector<std::vector<int>> x = {
         {0, 0, 0}, {0, 0, 1}, {0, 1, 0}, {1, 0, 0},
         {1, 1, 0}, {1, 0, 1}, {0, 1, 1}, {1, 1, 1}
     };
-    std::vector<double> y = {1, 0, 0, 0, 0, 0, 0, 0};
+    std::vector<int> y = {1, 0, 0, 0, 0, 0, 0, 0};
 
     // Train the perceptron
     nor_gate.train(x, y, EPOCHS);
 
-    std::vector<double> in000 = {0, 0, 0};
-    std::vector<double> in100 = {1, 0, 0};
-    std::vector<double> in010 = {0, 1, 0};
-    std::vector<double> in001 = {0, 0, 1};
-    std::vector<double> in111 = {1, 1, 1};
+    std::vector<int> in000 = {0, 0, 0};
+    std::vector<int> in100 = {1, 0, 0};
+    std::vector<int> in010 = {0, 1, 0};
+    std::vector<int> in001 = {0, 0, 1};
+    std::vector<int> in111 = {1, 1, 1};
 
     // Test various cases
     CHECK(nor_gate.predict(in000) == 1);
@@ -131,24 +131,24 @@ TEST_CASE("Perceptron for 3-input Majority Gate", "[perceptron]") {
 
     // Training data for a majority gate:
     // Output 1 if at least two inputs are 1, else output 0.
-    std::vector<std::vector<double>> x = {
+    std::vector<std::vector<int>> x = {
         {0, 0, 0}, {0, 0, 1}, {0, 1, 0}, {1, 0, 0}, 
         {0, 1, 1}, {1, 0, 1}, {1, 1, 0}, {1, 1, 1}  
     };
-    std::vector<double> y = {0, 0, 0, 0, 1, 1, 1, 1};
+    std::vector<int> y = {0, 0, 0, 0, 1, 1, 1, 1};
 
     // Train the perceptron
     majority_gate.train(x, y, EPOCHS);
 
     // Define input vectors as done in other tests
-    std::vector<double> in000 = {0, 0, 0};
-    std::vector<double> in001 = {0, 0, 1};
-    std::vector<double> in010 = {0, 1, 0};
-    std::vector<double> in100 = {1, 0, 0};
-    std::vector<double> in011 = {0, 1, 1};
-    std::vector<double> in101 = {1, 0, 1};
-    std::vector<double> in110 = {1, 1, 0};
-    std::vector<double> in111 = {1, 1, 1};
+    std::vector<int> in000 = {0, 0, 0};
+    std::vector<int> in001 = {0, 0, 1};
+    std::vector<int> in010 = {0, 1, 0};
+    std::vector<int> in100 = {1, 0, 0};
+    std::vector<int> in011 = {0, 1, 1};
+    std::vector<int> in101 = {1, 0, 1};
+    std::vector<int> in110 = {1, 1, 0};
+    std::vector<int> in111 = {1, 1, 1};
 
     CHECK(majority_gate.predict(in000) == 0);
     CHECK(majority_gate.predict(in001) == 0);
@@ -162,11 +162,11 @@ TEST_CASE("Perceptron for 3-input Majority Gate", "[perceptron]") {
 
 TEST_CASE("PerceptronLayer for AND and OR Gates", "[perceptronLayer]") {
     // Training data common to both gates:
-    std::vector<std::vector<double>> inputs = {
+    std::vector<std::vector<int>> inputs = {
         {0, 0}, {0, 1}, {1, 0}, {1, 1}
     };
     
-    std::vector<std::vector<double>> targets = {
+    std::vector<std::vector<int>> targets = {
         // AND gate targets: only {1,1} should yield 1.
         {0, 0, 0, 1},
         // OR gate targets: all inputs except {0,0} yield 1.
@@ -179,15 +179,15 @@ TEST_CASE("PerceptronLayer for AND and OR Gates", "[perceptronLayer]") {
     and_layer.train(inputs, targets, EPOCHS);
     
     // Define input vectors.
-    std::vector<double> in00 = {0, 0};
-    std::vector<double> in01 = {0, 1};
-    std::vector<double> in10 = {1, 0};
-    std::vector<double> in11 = {1, 1};
+    std::vector<int> in00 = {0, 0};
+    std::vector<int> in01 = {0, 1};
+    std::vector<int> in10 = {1, 0};
+    std::vector<int> in11 = {1, 1};
 
     // Define expected outputs for the AND gate and OR gate.
-    std::vector<double> out00 = {0, 0};
-    std::vector<double> out01 = {0, 1};
-    std::vector<double> out11 = {1, 1};
+    std::vector<int> out00 = {0, 0};
+    std::vector<int> out01 = {0, 1};
+    std::vector<int> out11 = {1, 1};
     
     // Verify layer's predictions for the AND/ OR gates.
     CHECK(and_layer.feed_forward(in00) == out00);
@@ -203,18 +203,18 @@ TEST_CASE("PerceptronNetwork for the XOR gate with 2 inputs", "[perceptronNetwor
 
     // Training data for the XOR gate:
     // Output 1 if inputs are different, else output 0.
-    std::vector<std::vector<double>> inputs = {
+    std::vector<std::vector<int>> inputs = {
         {0, 0}, {0, 1}, {1, 0}, {1, 1}
     };
 
     // OR and NAND gates for the input layer
-    std::vector<std::vector<double>> targetsInput = {
+    std::vector<std::vector<int>> targetsInput = {
         {0, 1, 1, 1},
         {1, 1, 1, 0}
     };
 
     // And gate for the output layer
-    std::vector<std::vector<double>> targetsOutput = {
+    std::vector<std::vector<int>> targetsOutput = {
         {0, 0, 0, 1}
     };
     // Train the layers
@@ -224,16 +224,16 @@ TEST_CASE("PerceptronNetwork for the XOR gate with 2 inputs", "[perceptronNetwor
     PerceptronNetwork xor_network({inputLayer, outputLayer});
 
     // Define input vectors.
-    std::vector<double> in00 = {0, 0};
-    std::vector<double> in01 = {0, 1};
-    std::vector<double> in10 = {1, 0};
-    std::vector<double> in11 = {1, 1};
+    std::vector<int> in00 = {0, 0};
+    std::vector<int> in01 = {0, 1};
+    std::vector<int> in10 = {1, 0};
+    std::vector<int> in11 = {1, 1};
 
     // Define expected outputs for the XOR gate.
-    std::vector<double> out00 = {0};
-    std::vector<double> out01 = {1};
-    std::vector<double> out10 = {1};
-    std::vector<double> out11 = {0};
+    std::vector<int> out00 = {0};
+    std::vector<int> out01 = {1};
+    std::vector<int> out10 = {1};
+    std::vector<int> out11 = {0};
 
     // Verify network's predictions for the XOR gate.
     CHECK(xor_network.feed_forward(in00) == out00);

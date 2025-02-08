@@ -19,18 +19,18 @@ PerceptronLayer::PerceptronLayer(int numNeurons, int inputDimension, double lear
     }
 }
 
-std::vector<double> PerceptronLayer::feed_forward(const std::vector<double>& input) const 
+std::vector<int> PerceptronLayer::feed_forward(const std::vector<int>& input) const 
 {
     // Predict the output for each perceptron 
-    std::vector<double> outputs;
+    std::vector<int> outputs;
     for (const Perceptron& neuron : neurons) {
         outputs.push_back(neuron.predict(input));
     }
     return outputs;
 }
 
-void PerceptronLayer::train(const std::vector<std::vector<double>>& inputs, 
-    const std::vector<std::vector<double>>& targets, 
+void PerceptronLayer::train(const std::vector<std::vector<int>>& inputs, 
+    const std::vector<std::vector<int>>& targets, 
     int epochs)
 {
         // Training each perceptron in the layer

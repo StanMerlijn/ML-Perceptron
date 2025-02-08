@@ -5,9 +5,9 @@
 PerceptronNetwork::PerceptronNetwork(std::vector<PerceptronLayer> layers) 
     : layers(layers) {}
 
-std::vector<double> PerceptronNetwork::feed_forward(const std::vector<double>& input) const
+std::vector<int> PerceptronNetwork::feed_forward(const std::vector<int>& input) const
 {
-    std::vector<double> activation = input;
+    std::vector<int> activation = input;
     // Propagate the input through each layer sequentially.
     for (const PerceptronLayer& layer : layers) {
         activation = layer.feed_forward(activation);

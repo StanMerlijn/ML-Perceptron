@@ -8,9 +8,9 @@ class PerceptronLayer
 public:
     PerceptronLayer(int numNeurons, int inputDimension, double learningRate);
 
-    std::vector<double> feed_forward(const std::vector<double>& input) const;    
-    void train(const std::vector<std::vector<double>>& inputs, 
-        const std::vector<std::vector<double>>& targets, 
+    std::vector<int> feed_forward(const std::vector<int>& input) const;    
+    void train(const std::vector<std::vector<int>>& inputs, 
+        const std::vector<std::vector<int>>& targets, 
         int epochs);
     
     void __str__(int verbose) const;

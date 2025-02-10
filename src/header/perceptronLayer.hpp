@@ -7,7 +7,7 @@ class PerceptronLayer
 {
 public:
     PerceptronLayer(const std::vector<Perceptron>& neurons);
-    std::vector<int> predict(const std::vector<int>& input) const;    
+    std::vector<int> feedForward(const std::vector<int>& input) const;    
     void __str__(int verbose) const;
 
 private:

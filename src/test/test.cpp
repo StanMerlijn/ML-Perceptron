@@ -14,7 +14,7 @@
  * @brief Unit tests for the Perceptron, PerceptronLayer and PerceptronNetwork classes.
  *
  * This file contains a series of test cases to verify the functionality of the Perceptron and PerceptronLayer classes.
- * The tests include training and prediction for various logic gates.
+ * The tests include training and prediction for various logic gates. 
  *
  * Test Cases:
  * - Perceptron for INVERT Gate: Tests the perceptron's ability to learn the INVERT gate.
@@ -32,21 +32,6 @@
 // Define the input vectors for the logic gates
 std::vector<std::vector<int>> inputs = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
 
-// Define inputs for 2-input gates
-std::vector<int> in00 = {0, 0};
-std::vector<int> in01 = {0, 1};
-std::vector<int> in10 = {1, 0};
-std::vector<int> in11 = {1, 1};
-
-// Define inputs for 3-input gates
-std::vector<int> in000 = {0, 0, 0};
-std::vector<int> in001 = {0, 0, 1};
-std::vector<int> in010 = {0, 1, 0};
-std::vector<int> in100 = {1, 0, 0};
-std::vector<int> in011 = {0, 1, 1};
-std::vector<int> in101 = {1, 0, 1};
-std::vector<int> in110 = {1, 1, 0};
-std::vector<int> in111 = {1, 1, 1};
 
 TEST_CASE("Perceptron for INVERT Gate", "[perceptron]") 
 {
@@ -58,8 +43,8 @@ TEST_CASE("Perceptron for INVERT Gate", "[perceptron]")
     std::vector<int> targets = {1, 0};
     invert_gate.train(inputsInverter, targets, EPOCHS);
 
-    REQUIRE(invert_gate.predict(in10) == 0);
-    REQUIRE(invert_gate.predict(in01) == 1);
+    REQUIRE(invert_gate.predict({1, 0}) == 0);
+    REQUIRE(invert_gate.predict({0, 1}) == 1);
 }
 
 TEST_CASE("Perceptron for AND Gate", "[perceptron]") 
@@ -68,10 +53,10 @@ TEST_CASE("Perceptron for AND Gate", "[perceptron]")
     std::vector<int> targets = {0,0,0,1};
     p_and.train(inputs, targets, EPOCHS);
 
-    REQUIRE(p_and.predict(in00) == 0);
-    REQUIRE(p_and.predict(in01) == 0);
-    REQUIRE(p_and.predict(in10) == 0);
-    REQUIRE(p_and.predict(in11) == 1);
+    REQUIRE(p_and.predict({0, 0}) == 0);
+    REQUIRE(p_and.predict({0, 1}) == 0);
+    REQUIRE(p_and.predict({1, 0}) == 0);
+    REQUIRE(p_and.predict({1, 1}) == 1);
 }
 
 TEST_CASE("Perceptron for OR Gate", "[perceptron]") 
@@ -80,10 +65,10 @@ TEST_CASE("Perceptron for OR Gate", "[perceptron]")
     std::vector<int> targets = {0,1,1,1};
     p_or.train(inputs, targets, EPOCHS);
 
-    REQUIRE(p_or.predict(in00) == 0);
-    REQUIRE(p_or.predict(in01) == 1);
-    REQUIRE(p_or.predict(in10) == 1);
-    REQUIRE(p_or.predict(in11) == 1);
+    REQUIRE(p_or.predict({0, 0}) == 0);
+    REQUIRE(p_or.predict({0, 1}) == 1);
+    REQUIRE(p_or.predict({1, 0}) == 1);
+    REQUIRE(p_or.predict({1, 1}) == 1);
 }
 
 TEST_CASE("Perceptron for NOR Gate (3 inputs)", "[perceptron]") {
@@ -99,14 +84,14 @@ TEST_CASE("Perceptron for NOR Gate (3 inputs)", "[perceptron]") {
     std::vector<int> targets = {1, 0, 0, 0, 0, 0, 0, 0};
     norGate.train(inputsNOR, targets, EPOCHS);
 
-    REQUIRE(norGate.predict(in000) == 1);
-    REQUIRE(norGate.predict(in001) == 0);
-    REQUIRE(norGate.predict(in010) == 0);
-    REQUIRE(norGate.predict(in100) == 0);
-    REQUIRE(norGate.predict(in011) == 0);
-    REQUIRE(norGate.predict(in101) == 0);
-    REQUIRE(norGate.predict(in110) == 0);
-    REQUIRE(norGate.predict(in111) == 0);
+    REQUIRE(norGate.predict({0, 0, 0}) == 1);
+    REQUIRE(norGate.predict({0, 0, 1}) == 0);
+    REQUIRE(norGate.predict({0, 1, 0}) == 0);
+    REQUIRE(norGate.predict({1, 0, 0}) == 0);
+    REQUIRE(norGate.predict({0, 1, 1}) == 0);
+    REQUIRE(norGate.predict({1, 0, 1}) == 0);
+    REQUIRE(norGate.predict({1, 1, 0}) == 0);
+    REQUIRE(norGate.predict({1, 1, 1}) == 0);
 }
 
 TEST_CASE("Perceptron for 3-input Majority Gate", "[perceptron]") {
@@ -123,14 +108,14 @@ TEST_CASE("Perceptron for 3-input Majority Gate", "[perceptron]") {
     std::vector<int> y = {0, 0, 0, 0, 1, 1, 1, 1};
     majorityGate.train(inputsMajority, y, EPOCHS);
 
-    REQUIRE(majorityGate.predict(in000) == 0);
-    REQUIRE(majorityGate.predict(in001) == 0);
-    REQUIRE(majorityGate.predict(in010) == 0);
-    REQUIRE(majorityGate.predict(in100) == 0);
-    REQUIRE(majorityGate.predict(in011) == 1);
-    REQUIRE(majorityGate.predict(in101) == 1);
-    REQUIRE(majorityGate.predict(in110) == 1);
-    REQUIRE(majorityGate.predict(in111) == 1);
+    REQUIRE(majorityGate.predict({0, 0, 0}) == 0);
+    REQUIRE(majorityGate.predict({0, 0, 1}) == 0);
+    REQUIRE(majorityGate.predict({0, 1, 0}) == 0);
+    REQUIRE(majorityGate.predict({1, 0, 0}) == 0);
+    REQUIRE(majorityGate.predict({0, 1, 1}) == 1);
+    REQUIRE(majorityGate.predict({1, 0, 1}) == 1);
+    REQUIRE(majorityGate.predict({1, 1, 0}) == 1);
+    REQUIRE(majorityGate.predict({1, 1, 1}) == 1);
 }
 
 TEST_CASE("PerceptronLayer for AND and OR Gates", "[perceptronLayer]") {
@@ -151,10 +136,10 @@ TEST_CASE("PerceptronLayer for AND and OR Gates", "[perceptronLayer]") {
     std::vector<int> out01 = {0, 1};
     std::vector<int> out11 = {1, 1};
     
-    REQUIRE(andLayer.feedForward(in00) == out00);
-    REQUIRE(andLayer.feedForward(in01) == out01);
-    REQUIRE(andLayer.feedForward(in10) == out01);
-    REQUIRE(andLayer.feedForward(in11) == out11);
+    REQUIRE(andLayer.feedForward({0, 0}) == out00);
+    REQUIRE(andLayer.feedForward({0, 1}) == out01);
+    REQUIRE(andLayer.feedForward({1, 0}) == out01);
+    REQUIRE(andLayer.feedForward({1, 1}) == out11);
 }
 
 TEST_CASE("PerceptronNetwork for the XOR gate with 2 inputs", "[perceptronNetwork]") {
@@ -181,10 +166,10 @@ TEST_CASE("PerceptronNetwork for the XOR gate with 2 inputs", "[perceptronNetwor
     std::vector<int> out11 = {0};
 
     // Verify network's predictions for the XOR gate.
-    REQUIRE(xor_network.feedForward(in00) == out00);
-    REQUIRE(xor_network.feedForward(in01) == out01);
-    REQUIRE(xor_network.feedForward(in10) == out10);
-    REQUIRE(xor_network.feedForward(in11) == out11);
+    REQUIRE(xor_network.feedForward({0, 0}) == out00);
+    REQUIRE(xor_network.feedForward({0, 1}) == out01);
+    REQUIRE(xor_network.feedForward({1, 0}) == out10);
+    REQUIRE(xor_network.feedForward({1, 1}) == out11);
 }
 
 TEST_CASE("PerceptronNetwork for half adder", "[perceptronNetwork]")

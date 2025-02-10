@@ -2,10 +2,11 @@
 #define EPOCHS 100
 
 #include "catch.hpp"
-#include "../src/header/perceptron.hpp"
-#include "../src/header/perceptronLayer.hpp"
-#include "../src/header/perceptronNetwork.hpp"
-#include "../src/header/halfAdder.hpp"
+#include "../header/perceptron.hpp"
+#include "../header/perceptronLayer.hpp"
+#include "../header/perceptronNetwork.hpp"
+#include "../header/halfAdder.hpp"
+
 #include <iostream>
 
 /**

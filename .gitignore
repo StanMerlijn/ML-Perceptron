@@ -34,6 +34,7 @@
 # Build files
 Build/*
 test/Build/*
+src/test/Build/*
 
 # zsh
 *.zsh

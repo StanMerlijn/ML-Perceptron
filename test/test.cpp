@@ -22,9 +22,8 @@
  * - Perceptron for NOR Gate (3 inputs): Tests the perceptron's ability to learn the NOR gate with 3 inputs.
  * - Perceptron for 3-input Majority Gate: Tests the perceptron's ability to learn the 3-input Majority gate.
  * - PerceptronLayer for AND and OR Gates: Tests the PerceptronLayer's ability to learn the AND and OR gates.
- * - Half adder for the XOR gate: Tests the half adder's ability to learn the XOR gate.
  * - PerceptronNetwork for the XOR gate with 2 inputs.
- * - PerceptronNetwork for a half adder. #TODO: iam losing my mind
+ * - PerceptronNetwork for a half adder. 
  * 
  * @note The tests use the Catch2 framework for unit testing.
  */
@@ -151,12 +150,11 @@ TEST_CASE("PerceptronLayer for AND and OR Gates", "[perceptronLayer]") {
     std::vector<int> out01 = {0, 1};
     std::vector<int> out11 = {1, 1};
     
-    REQUIRE(andLayer.predict(in00) == out00);
-    REQUIRE(andLayer.predict(in01) == out01);
-    REQUIRE(andLayer.predict(in10) == out01);
-    REQUIRE(andLayer.predict(in11) == out11);
+    REQUIRE(andLayer.feedForward(in00) == out00);
+    REQUIRE(andLayer.feedForward(in01) == out01);
+    REQUIRE(andLayer.feedForward(in10) == out01);
+    REQUIRE(andLayer.feedForward(in11) == out11);
 }
-
 
 TEST_CASE("PerceptronNetwork for the XOR gate with 2 inputs", "[perceptronNetwork]") {
     // Create a network with two layers: one for the AND gate and one for the OR gate.
@@ -182,99 +180,42 @@ TEST_CASE("PerceptronNetwork for the XOR gate with 2 inputs", "[perceptronNetwor
     std::vector<int> out11 = {0};
 
     // Verify network's predictions for the XOR gate.
-    REQUIRE(xor_network.feed_forward(in00) == out00);
-    REQUIRE(xor_network.feed_forward(in01) == out01);
-    REQUIRE(xor_network.feed_forward(in10) == out10);
-    REQUIRE(xor_network.feed_forward(in11) == out11);
+    REQUIRE(xor_network.feedForward(in00) == out00);
+    REQUIRE(xor_network.feedForward(in01) == out01);
+    REQUIRE(xor_network.feedForward(in10) == out10);
+    REQUIRE(xor_network.feedForward(in11) == out11);
 }
 
-TEST_CASE("Half adder", "[halfAdder]") {
-    // Create a half adder
-    halfAdder halfAdder;
-
-    // Define expected outputs for the XOR gate.
-    halfAdderOutput out00 = {0, 0};
-    halfAdderOutput out01 = {1, 0};
-    halfAdderOutput out10 = {1, 0};
-    halfAdderOutput out11 = {0, 1};
-
-    REQUIRE(halfAdder.predict(in00).sum == out00.sum);
-    REQUIRE(halfAdder.predict(in00).carry == out00.carry);
-    REQUIRE(halfAdder.predict(in01).sum == out01.sum);
-    REQUIRE(halfAdder.predict(in01).carry == out01.carry);
-    REQUIRE(halfAdder.predict(in10).sum == out10.sum);
-    REQUIRE(halfAdder.predict(in10).carry == out10.carry);
-    REQUIRE(halfAdder.predict(in11).sum == out11.sum);
-    REQUIRE(halfAdder.predict(in11).carry == out11.carry);
-}
-
-// TEST_CASE("PerceptronNetwork for half adder", "[perceptronNetwork]")
-// {
-//     // Hidden layer with 2 neurons
-//     // And and Or gates
-//     PerceptronLayer hiddenLayer(2, 2, 0.1);
+TEST_CASE("PerceptronNetwork for half adder", "[perceptronNetwork]")
+{
+    // Hidden layer: compute OR and AND
+    Perceptron n_or({0.1, 0.1}, 0.1, 0.1);
+    Perceptron n_and({0.1, 0.1}, 0.1, 0.1);
     
-//     std::vector<std::vector<int>> targetsHidden = {
-//         {0, 1, 1, 0}
-//     };
-//     // hiddenLayer.train(inputs, targetsHidden, EPOCHS);
+    n_or.train(inputs, {0, 1, 1, 1}, EPOCHS);
+    n_and.train(inputs, {0, 0, 0, 1}, EPOCHS);
 
-// }
-// TEST_CASE("PerceptronNetwork for a half adder", "[perceptronNetwork]") {
-//     // Create a network with three layers.
-//     PerceptronLayer inputLayer(2, 2, 0.1);
-//     PerceptronLayer hiddenLayer(2, 2, 0.1);
-//     // Update the output layer to have 2 neurons.
-//     PerceptronLayer outputLayer(2, 2, 0.1);
+    PerceptronLayer hiddenLayer({n_or, n_and});
 
-//     // Training data for the half adder:
-//     // Inputs: {0, 0}, {0, 1}, {1, 0}, {1, 1}
-//     std::vector<std::vector<int>> inputs = {
-//         {0, 0}, {0, 1}, {1, 0}, {1, 1}
-//     };
+    // Output layer: compute XOR (for sum) and carry
+    // XOR = OR - AND; Perceptron with weights {1, -1} and bias -0.5
+    // x1 = 0, x2 = 0: 1 * 0 + -1 * 0 - 0.5 = -0.5
+    // x1 = 1, x2 = 0: 1 * 1 + -1 * 0 - 0.5 = 0.5
+    // x1 = 1, x2 = 1: 1 * 1 + -1 * 1 - 0.5 = -0.5
+    
+    Perceptron n_xor({0.1, 0.1}, 0.1, 0.1);
+    Perceptron n_carry({0.1, 0.1}, 0.1, 0.1);
 
-//     // For the input layer, we train two neurons:
-//     // - First neuron: AND gate: outputs {0, 0, 0, 1}
-//     // - Second neuron: OR gate: outputs {0, 1, 1, 1}
-//     std::vector<std::vector<int>> targetsInput = {
-//         {0, 0, 0, 1},
-//         {0, 1, 1, 1}
-//     };
+    n_xor.train({{0, 0}, {1, 0}, {1, 1}}, {0, 1, 0}, EPOCHS);
+    n_carry.train(inputs, {0, 0, 0, 1}, EPOCHS);
 
-//     // For the hidden layer, we train a neuron to compute XOR: outputs {0, 1, 1, 0}
-//     std::vector<std::vector<int>> targetsHidden = {
-//         {0, 1, 1, 0}
-//     };
+    PerceptronLayer outputLayer({n_xor, n_carry});
 
-//     // For the output layer, we now train two neurons:
-//     // - First neuron (Sum): XOR: outputs {0, 1, 1, 0}
-//     // - Second neuron (Carry): AND: outputs {0, 0, 0, 1}
-//     std::vector<std::vector<int>> targetsOutput = {
-//         {0, 1, 1, 0},  // Sum (XOR)
-//         {0, 0, 0, 1}   // Carry (AND)
-//     };
+    PerceptronNetwork halfAdder({hiddenLayer, outputLayer});
 
-//     // Train the layers with the corresponding targets.
-//     inputLayer.train(inputs, targetsInput, EPOCHS);
-//     hiddenLayer.train(inputs, targetsHidden, EPOCHS);
-//     outputLayer.train(inputs, targetsOutput, EPOCHS);
-
-//     PerceptronNetwork half_adder({inputLayer, hiddenLayer, outputLayer});
-
-//     // Define input vectors.
-//     std::vector<int> in00 = {0, 0};
-//     std::vector<int> in01 = {0, 1};
-//     std::vector<int> in10 = {1, 0};
-//     std::vector<int> in11 = {1, 1};
-
-//     // Define expected outputs for the half adder.
-//     std::vector<int> out00 = {0, 0};
-//     std::vector<int> out10 = {1, 0};
-//     std::vector<int> out01 = {0, 1};
-
-//     // Verify network's predictions for the half adder.
-//     REQUIRE(half_adder.feed_forward(in00) == out00);
-//     REQUIRE(half_adder.feed_forward(in01) == out10);
-//     REQUIRE(half_adder.feed_forward(in10) == out10);
-//     REQUIRE(half_adder.feed_forward(in11) == out01);
-// }
+    // Test cases for half adder: {Sum, Carry}
+    REQUIRE(halfAdder.feedForward({0, 0}) == std::vector<int>{0, 0});
+    REQUIRE(halfAdder.feedForward({0, 1}) == std::vector<int>{1, 0});
+    REQUIRE(halfAdder.feedForward({1, 0}) == std::vector<int>{1, 0});
+    REQUIRE(halfAdder.feedForward({1, 1}) == std::vector<int>{0, 1});
+}

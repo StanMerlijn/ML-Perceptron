@@ -6,13 +6,8 @@
 class PerceptronLayer
 {
 public:
-    PerceptronLayer(int numNeurons, int inputDimension, double learningRate);
-
+    PerceptronLayer(const std::vector<Perceptron>& neurons);
     std::vector<int> predict(const std::vector<int>& input) const;    
-    void train(const std::vector<std::vector<int>>& inputs, 
-        const std::vector<std::vector<int>>& targets, 
-        int epochs);
-    
     void __str__(int verbose) const;
 
 private:

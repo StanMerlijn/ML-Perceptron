@@ -58,32 +58,32 @@ TEST_CASE("Perceptron for INVERT Gate", "[perceptron]")
     std::vector<int> targets = {1, 0};
     invert_gate.train(inputsInverter, targets, EPOCHS);
 
-    CHECK(invert_gate.predict(in10) == 0);
-    CHECK(invert_gate.predict(in01) == 1);
+    REQUIRE(invert_gate.predict(in10) == 0);
+    REQUIRE(invert_gate.predict(in01) == 1);
 }
 
 TEST_CASE("Perceptron for AND Gate", "[perceptron]") 
 {
-    Perceptron and_gate({0.1, 0.1}, 1, 0.1);
+    Perceptron p_and({0.1, 0.1}, 1, 0.1);
     std::vector<int> targets = {0,0,0,1};
-    and_gate.train(inputs, targets, EPOCHS);
+    p_and.train(inputs, targets, EPOCHS);
 
-    CHECK(and_gate.predict(in00) == 0);
-    CHECK(and_gate.predict(in01) == 0);
-    CHECK(and_gate.predict(in10) == 0);
-    CHECK(and_gate.predict(in11) == 1);
+    REQUIRE(p_and.predict(in00) == 0);
+    REQUIRE(p_and.predict(in01) == 0);
+    REQUIRE(p_and.predict(in10) == 0);
+    REQUIRE(p_and.predict(in11) == 1);
 }
 
 TEST_CASE("Perceptron for OR Gate", "[perceptron]") 
 {
-    Perceptron or_gate({0.1, 0.1}, 1, 0.1);
+    Perceptron p_or({0.1, 0.1}, 1, 0.1);
     std::vector<int> targets = {0,1,1,1};
-    or_gate.train(inputs, targets, EPOCHS);
+    p_or.train(inputs, targets, EPOCHS);
 
-    CHECK(or_gate.predict(in00) == 0);
-    CHECK(or_gate.predict(in01) == 1);
-    CHECK(or_gate.predict(in10) == 1);
-    CHECK(or_gate.predict(in11) == 1);
+    REQUIRE(p_or.predict(in00) == 0);
+    REQUIRE(p_or.predict(in01) == 1);
+    REQUIRE(p_or.predict(in10) == 1);
+    REQUIRE(p_or.predict(in11) == 1);
 }
 
 TEST_CASE("Perceptron for NOR Gate (3 inputs)", "[perceptron]") {
@@ -99,14 +99,14 @@ TEST_CASE("Perceptron for NOR Gate (3 inputs)", "[perceptron]") {
     std::vector<int> targets = {1, 0, 0, 0, 0, 0, 0, 0};
     norGate.train(inputsNOR, targets, EPOCHS);
 
-    CHECK(norGate.predict(in000) == 1);
-    CHECK(norGate.predict(in001) == 0);
-    CHECK(norGate.predict(in010) == 0);
-    CHECK(norGate.predict(in100) == 0);
-    CHECK(norGate.predict(in011) == 0);
-    CHECK(norGate.predict(in101) == 0);
-    CHECK(norGate.predict(in110) == 0);
-    CHECK(norGate.predict(in111) == 0);
+    REQUIRE(norGate.predict(in000) == 1);
+    REQUIRE(norGate.predict(in001) == 0);
+    REQUIRE(norGate.predict(in010) == 0);
+    REQUIRE(norGate.predict(in100) == 0);
+    REQUIRE(norGate.predict(in011) == 0);
+    REQUIRE(norGate.predict(in101) == 0);
+    REQUIRE(norGate.predict(in110) == 0);
+    REQUIRE(norGate.predict(in111) == 0);
 }
 
 TEST_CASE("Perceptron for 3-input Majority Gate", "[perceptron]") {
@@ -123,66 +123,55 @@ TEST_CASE("Perceptron for 3-input Majority Gate", "[perceptron]") {
     std::vector<int> y = {0, 0, 0, 0, 1, 1, 1, 1};
     majorityGate.train(inputsMajority, y, EPOCHS);
 
-    CHECK(majorityGate.predict(in000) == 0);
-    CHECK(majorityGate.predict(in001) == 0);
-    CHECK(majorityGate.predict(in010) == 0);
-    CHECK(majorityGate.predict(in100) == 0);
-    CHECK(majorityGate.predict(in011) == 1);
-    CHECK(majorityGate.predict(in101) == 1);
-    CHECK(majorityGate.predict(in110) == 1);
-    CHECK(majorityGate.predict(in111) == 1);
+    REQUIRE(majorityGate.predict(in000) == 0);
+    REQUIRE(majorityGate.predict(in001) == 0);
+    REQUIRE(majorityGate.predict(in010) == 0);
+    REQUIRE(majorityGate.predict(in100) == 0);
+    REQUIRE(majorityGate.predict(in011) == 1);
+    REQUIRE(majorityGate.predict(in101) == 1);
+    REQUIRE(majorityGate.predict(in110) == 1);
+    REQUIRE(majorityGate.predict(in111) == 1);
 }
 
 TEST_CASE("PerceptronLayer for AND and OR Gates", "[perceptronLayer]") {
     // Training data common to both gates:
-    std::vector<std::vector<int>> targets = {
-        // AND gate targets: only {1,1} should yield 1.
-        {0, 0, 0, 1},
-        // OR gate targets: all inputs except {0,0} yield 1.
-        {0, 1, 1, 1}
-    };
+    Perceptron p_or({0.1, 0.1}, 1, 0.1);
+    Perceptron p_and({0.1, 0.1}, 1, 0.1);
+
+    // Training the OR and AND gates.
+    p_or.train(inputs, {0, 1, 1, 1}, EPOCHS);
+    p_and.train(inputs, {0, 0, 0, 1}, EPOCHS);
 
     // Create a layer with two neurons (2 inputs) for the AND gate and a learning rate of 0.1.
     // Train the layer with the AND gate targets and OR gate targets.
-    PerceptronLayer andLayer(2, 2, 0.1);
-    andLayer.train(inputs, targets, EPOCHS);
+    PerceptronLayer andLayer({p_and, p_or});
 
     // Define expected outputs for the AND gate and OR gate.
     std::vector<int> out00 = {0, 0};
     std::vector<int> out01 = {0, 1};
     std::vector<int> out11 = {1, 1};
     
-    CHECK(andLayer.predict(in00) == out00);
-    CHECK(andLayer.predict(in01) == out01);
-    CHECK(andLayer.predict(in10) == out01);
-    CHECK(andLayer.predict(in11) == out11);
+    REQUIRE(andLayer.predict(in00) == out00);
+    REQUIRE(andLayer.predict(in01) == out01);
+    REQUIRE(andLayer.predict(in10) == out01);
+    REQUIRE(andLayer.predict(in11) == out11);
 }
 
 
 TEST_CASE("PerceptronNetwork for the XOR gate with 2 inputs", "[perceptronNetwork]") {
     // Create a network with two layers: one for the AND gate and one for the OR gate.
-    PerceptronLayer inputLayer(2, 2, 0.1);
-    PerceptronLayer outputLayer(1, 2, 0.1);
-
-    // Training data for the XOR gate:
-    // Output 1 if inputs are different, else output 0.
-    std::vector<std::vector<int>> inputs = {
-        {0, 0}, {0, 1}, {1, 0}, {1, 1}
-    };
-
     // OR and NAND gates for the input layer
-    std::vector<std::vector<int>> targetsInput = {
-        {0, 1, 1, 1},
-        {1, 1, 1, 0}
-    };
+    Perceptron p_or({0.1, 0.1}, 1, 0.1);
+    Perceptron p_nand({0.1, 0.1}, 1, 0.1);
+    Perceptron p_and({0.1, 0.1}, 1, 0.1);
 
-    // And gate for the output layer
-    std::vector<std::vector<int>> targetsOutput = {
-        {0, 0, 0, 1}
-    };
-    // Train the layers
-    inputLayer.train(inputs, targetsInput, EPOCHS);
-    outputLayer.train(inputs, targetsOutput, EPOCHS);
+    // Training The gates
+    p_or.train(inputs,  {0, 1, 1, 1} , EPOCHS);
+    p_nand.train(inputs, {1, 1, 1, 0}, EPOCHS);
+    p_and.train(inputs,  {0, 0, 0, 1} , EPOCHS);
+
+    PerceptronLayer inputLayer({p_or, p_nand});
+    PerceptronLayer outputLayer({p_and});
 
     PerceptronNetwork xor_network({inputLayer, outputLayer});
 
@@ -193,10 +182,10 @@ TEST_CASE("PerceptronNetwork for the XOR gate with 2 inputs", "[perceptronNetwor
     std::vector<int> out11 = {0};
 
     // Verify network's predictions for the XOR gate.
-    CHECK(xor_network.feed_forward(in00) == out00);
-    CHECK(xor_network.feed_forward(in01) == out01);
-    CHECK(xor_network.feed_forward(in10) == out10);
-    CHECK(xor_network.feed_forward(in11) == out11);
+    REQUIRE(xor_network.feed_forward(in00) == out00);
+    REQUIRE(xor_network.feed_forward(in01) == out01);
+    REQUIRE(xor_network.feed_forward(in10) == out10);
+    REQUIRE(xor_network.feed_forward(in11) == out11);
 }
 
 TEST_CASE("Half adder", "[halfAdder]") {
@@ -209,16 +198,28 @@ TEST_CASE("Half adder", "[halfAdder]") {
     halfAdderOutput out10 = {1, 0};
     halfAdderOutput out11 = {0, 1};
 
-    CHECK(halfAdder.predict(in00).sum == out00.sum);
-    CHECK(halfAdder.predict(in00).carry == out00.carry);
-    CHECK(halfAdder.predict(in01).sum == out01.sum);
-    CHECK(halfAdder.predict(in01).carry == out01.carry);
-    CHECK(halfAdder.predict(in10).sum == out10.sum);
-    CHECK(halfAdder.predict(in10).carry == out10.carry);
-    CHECK(halfAdder.predict(in11).sum == out11.sum);
-    CHECK(halfAdder.predict(in11).carry == out11.carry);
+    REQUIRE(halfAdder.predict(in00).sum == out00.sum);
+    REQUIRE(halfAdder.predict(in00).carry == out00.carry);
+    REQUIRE(halfAdder.predict(in01).sum == out01.sum);
+    REQUIRE(halfAdder.predict(in01).carry == out01.carry);
+    REQUIRE(halfAdder.predict(in10).sum == out10.sum);
+    REQUIRE(halfAdder.predict(in10).carry == out10.carry);
+    REQUIRE(halfAdder.predict(in11).sum == out11.sum);
+    REQUIRE(halfAdder.predict(in11).carry == out11.carry);
 }
 
+// TEST_CASE("PerceptronNetwork for half adder", "[perceptronNetwork]")
+// {
+//     // Hidden layer with 2 neurons
+//     // And and Or gates
+//     PerceptronLayer hiddenLayer(2, 2, 0.1);
+    
+//     std::vector<std::vector<int>> targetsHidden = {
+//         {0, 1, 1, 0}
+//     };
+//     // hiddenLayer.train(inputs, targetsHidden, EPOCHS);
+
+// }
 // TEST_CASE("PerceptronNetwork for a half adder", "[perceptronNetwork]") {
 //     // Create a network with three layers.
 //     PerceptronLayer inputLayer(2, 2, 0.1);
@@ -272,8 +273,8 @@ TEST_CASE("Half adder", "[halfAdder]") {
 //     std::vector<int> out01 = {0, 1};
 
 //     // Verify network's predictions for the half adder.
-//     CHECK(half_adder.feed_forward(in00) == out00);
-//     CHECK(half_adder.feed_forward(in01) == out10);
-//     CHECK(half_adder.feed_forward(in10) == out10);
-//     CHECK(half_adder.feed_forward(in11) == out01);
+//     REQUIRE(half_adder.feed_forward(in00) == out00);
+//     REQUIRE(half_adder.feed_forward(in01) == out10);
+//     REQUIRE(half_adder.feed_forward(in10) == out10);
+//     REQUIRE(half_adder.feed_forward(in11) == out01);
 // }

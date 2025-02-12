@@ -1,3 +1,13 @@
+/**
+ * @file perceptronNetwork.cpp
+ * @author Stan Merlijn
+ * @brief Implementation of the PerceptronNetwork class
+ * @version 0.1
+ * @date 2025-02-12
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
 #include "header/perceptronNetwork.hpp"
 #include "header/perceptronLayer.hpp" 
 #include <iostream>

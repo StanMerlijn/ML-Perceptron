@@ -1,3 +1,13 @@
+/**
+ * @file perceptronLayer.cpp
+ * @author Stan Merlijn
+ * @brief Implementation of the PerceptronLayer class
+ * @version 0.1
+ * @date 2025-02-12
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
 #include "header/perceptronLayer.hpp"
 
 PerceptronLayer::PerceptronLayer(const std::vector<Perceptron>& neurons) 

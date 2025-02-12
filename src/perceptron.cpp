@@ -1,3 +1,13 @@
+/**
+ * @file perceptron.cpp
+ * @author Stan Merlijn
+ * @brief Implementation of the Perceptron class
+ * @version 0.1
+ * @date 2025-02-12
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
 #include "header/perceptron.hpp"
 
 Perceptron::Perceptron(std::vector<double> weights, double bias, double learningRate)

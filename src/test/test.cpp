@@ -15,7 +15,6 @@
 #include "../header/perceptron.hpp"
 #include "../header/perceptronLayer.hpp"
 #include "../header/perceptronNetwork.hpp"
-#include "../header/halfAdder.hpp"
 
 #include <iostream>
 

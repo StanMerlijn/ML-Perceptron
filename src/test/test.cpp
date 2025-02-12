@@ -1,3 +1,13 @@
+/**
+ * @file test.cpp
+ * @author Stan Merlijn
+ * @brief In this file the test cases for the Perceptron, PerceptronLayer and PerceptronNetwork classes are defined. 
+ * @version 0.1
+ * @date 2025-02-12
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
 #define CATCH_CONFIG_MAIN
 #define EPOCHS 100
 
@@ -33,6 +43,10 @@
 std::vector<std::vector<int>> inputs = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
 
 
+/**
+ * @brief Perceptron for INVERT Gate: Tests the perceptron's ability to learn the INVERT gate.
+ * 
+ */
 TEST_CASE("Perceptron for INVERT Gate", "[perceptron]") 
 {
     Perceptron invert_gate({0.1, 0.1}, 1, 0.1);
@@ -47,6 +61,9 @@ TEST_CASE("Perceptron for INVERT Gate", "[perceptron]")
     REQUIRE(invert_gate.predict({0, 1}) == 1);
 }
 
+/** 
+ * @brief Perceptron for AND Gate: Tests the perceptron's ability to learn the AND gate.
+ */
 TEST_CASE("Perceptron for AND Gate", "[perceptron]") 
 {
     Perceptron p_and({0.1, 0.1}, 1, 0.1);
@@ -59,6 +76,9 @@ TEST_CASE("Perceptron for AND Gate", "[perceptron]")
     REQUIRE(p_and.predict({1, 1}) == 1);
 }
 
+/** 
+ * @brief Perceptron for OR Gate: Tests the perceptron's ability to learn the OR gate.
+ */
 TEST_CASE("Perceptron for OR Gate", "[perceptron]") 
 {
     Perceptron p_or({0.1, 0.1}, 1, 0.1);
@@ -71,6 +91,11 @@ TEST_CASE("Perceptron for OR Gate", "[perceptron]")
     REQUIRE(p_or.predict({1, 1}) == 1);
 }
 
+/** 
+ * @brief Perceptron for NOR Gate (3 inputs): Tests the perceptron's ability to learn the NOR gate with 3 inputs.
+ *  The NOR gate is a digital logic gate that implements logical NOR
+ * .
+ */
 TEST_CASE("Perceptron for NOR Gate (3 inputs)", "[perceptron]") {
     // Instantiate the perceptron with three weights.
     Perceptron norGate({-0.1, -0.1, -0.1}, 1, 0.1);
@@ -80,7 +105,7 @@ TEST_CASE("Perceptron for NOR Gate (3 inputs)", "[perceptron]") {
     std::vector<std::vector<int>> inputsNOR = {
         {0, 0, 0}, {0, 0, 1}, {0, 1, 0}, {1, 0, 0},
         {1, 1, 0}, {1, 0, 1}, {0, 1, 1}, {1, 1, 1}
-    };
+    }; /// 0, 0, 0, 0, 0, 0, 0, 1
     std::vector<int> targets = {1, 0, 0, 0, 0, 0, 0, 0};
     norGate.train(inputsNOR, targets, EPOCHS);
 
@@ -94,6 +119,9 @@ TEST_CASE("Perceptron for NOR Gate (3 inputs)", "[perceptron]") {
     REQUIRE(norGate.predict({1, 1, 1}) == 0);
 }
 
+/** 
+ * @brief Perceptron for 3-input Majority Gate: Tests the perceptron's ability to learn the 3-input Majority gate.
+ */
 TEST_CASE("Perceptron for 3-input Majority Gate", "[perceptron]") {
     // Instantiate the perceptron with three inputs. Here we choose small positive initial weights
     // and a negative bias. Adjust these parameters if necessary to speed up convergence.
@@ -118,6 +146,10 @@ TEST_CASE("Perceptron for 3-input Majority Gate", "[perceptron]") {
     REQUIRE(majorityGate.predict({1, 1, 1}) == 1);
 }
 
+/** 
+ * @brief PerceptronLayer for AND and OR Gates: Tests the PerceptronLayer's ability to learn the AND and OR gates.
+ * It contains two perceptrons: one for the AND gate and one for the OR gate.
+ */
 TEST_CASE("PerceptronLayer for AND and OR Gates", "[perceptronLayer]") {
     // Training data common to both gates:
     Perceptron p_or({0.1, 0.1}, 1, 0.1);
@@ -142,6 +174,11 @@ TEST_CASE("PerceptronLayer for AND and OR Gates", "[perceptronLayer]") {
     REQUIRE(andLayer.feedForward({1, 1}) == out11);
 }
 
+/** 
+ * @brief PerceptronNetwork for the XOR gate with 2 inputs. This network contains two layers: 
+ * inputLayer for the AND gate and one for the OR gate.
+ * outputLayer for the AND gate. 
+ */
 TEST_CASE("PerceptronNetwork for the XOR gate with 2 inputs", "[perceptronNetwork]") {
     // Create a network with two layers: one for the AND gate and one for the OR gate.
     // OR and NAND gates for the input layer
@@ -172,6 +209,11 @@ TEST_CASE("PerceptronNetwork for the XOR gate with 2 inputs", "[perceptronNetwor
     REQUIRE(xor_network.feedForward({1, 1}) == out11);
 }
 
+/** 
+ * @brief PerceptronNetwork for a half adder. This network contains two layers: 
+ * hiddenLayer for the OR and AND gates.
+ * outputLayer for the XOR gate(sum) and the carry.
+ */
 TEST_CASE("PerceptronNetwork for half adder", "[perceptronNetwork]")
 {
     // Hidden layer: compute OR and AND

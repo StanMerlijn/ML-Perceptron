@@ -38,3 +38,7 @@ src/test/Build/*
 
 # zsh
 *.zsh
+
+# doxygen
+docs/latex/*
+docs/html/*

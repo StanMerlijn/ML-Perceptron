@@ -7,6 +7,7 @@ std::vector<int> PerceptronLayer::feedForward(const std::vector<int>& input) con
 {
     // Predict the output for each perceptron 
     std::vector<int> outputs;
+    // Propagate the input through each layer sequentially.
     for (const Perceptron& neuron : neurons) {
         outputs.push_back(neuron.predict(input));
     }

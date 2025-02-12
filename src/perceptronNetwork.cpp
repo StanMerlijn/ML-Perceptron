@@ -19,6 +19,7 @@ void PerceptronNetwork::__str__(int verbose) const
 {
     std::cout << "Perceptron Network Structure:" << std::endl;
     std::cout << "Number of layers: " << layers.size() << std::endl;
+    // For each layer in the network print the data
     for (int i = 0; i < layers.size(); ++i)
     {
         std::cout << "Layer " << i + 1 << ": ";

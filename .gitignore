@@ -41,4 +41,3 @@ src/test/Build/*
 
 # doxygen
 docs/latex/*
-docs/html/*

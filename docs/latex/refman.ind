@@ -1,30 +1,44 @@
 \begin{theindex}
 
-  \item {/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/header/halfAdder.hpp}, 
-		\hyperpage{13}
   \item {/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/header/perceptron.hpp}, 
-		\hyperpage{14}
+		\hyperpage{13}, \hyperpage{15}
   \item {/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/header/perceptronLayer.hpp}, 
-		\hyperpage{15}
+		\hyperpage{15}, \hyperpage{17}
   \item {/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/header/perceptronNetwork.hpp}, 
-		\hyperpage{16}
+		\hyperpage{17}, \hyperpage{19}
+  \item {/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/perceptron.cpp}, 
+		\hyperpage{19, 20}
+  \item {/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/perceptronLayer.cpp}, 
+		\hyperpage{21, 22}
+  \item {/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/perceptronNetwork.cpp}, 
+		\hyperpage{22}, \hyperpage{24}
   \item {/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/test/test.cpp}, 
-		\hyperpage{17}
+		\hyperpage{24}, \hyperpage{29}
   \item {\_\_str\_\_}
     \subitem {Perceptron}, \hyperpage{8}
     \subitem {PerceptronLayer}, \hyperpage{10}
-    \subitem {PerceptronNetwork}, \hyperpage{11}
+    \subitem {PerceptronNetwork}, \hyperpage{12}
+
+  \indexspace
+
+  \item {CATCH\_CONFIG\_MAIN}
+    \subitem {test.cpp}, \hyperpage{27}
+
+  \indexspace
+
+  \item {EPOCHS}
+    \subitem {test.cpp}, \hyperpage{27}
 
   \indexspace
 
   \item {feedForward}
-    \subitem {PerceptronLayer}, \hyperpage{10}
-    \subitem {PerceptronNetwork}, \hyperpage{11}
+    \subitem {PerceptronLayer}, \hyperpage{11}
+    \subitem {PerceptronNetwork}, \hyperpage{12}
 
   \indexspace
 
-  \item {halfAdder}, \hyperpage{7}
-  \item {halfAdderOutput}, \hyperpage{7}
+  \item {inputs}
+    \subitem {test.cpp}, \hyperpage{29}
 
   \indexspace
 
@@ -34,16 +48,16 @@
 
   \item {Perceptron}, \hyperpage{7}
     \subitem {\_\_str\_\_}, \hyperpage{8}
-    \subitem {Perceptron}, \hyperpage{8}
+    \subitem {Perceptron}, \hyperpage{7}
     \subitem {predict}, \hyperpage{8}
-    \subitem {train}, \hyperpage{9}
+    \subitem {train}, \hyperpage{8}
   \item {PerceptronLayer}, \hyperpage{9}
     \subitem {\_\_str\_\_}, \hyperpage{10}
-    \subitem {feedForward}, \hyperpage{10}
-    \subitem {PerceptronLayer}, \hyperpage{9}
-  \item {PerceptronNetwork}, \hyperpage{10}
-    \subitem {\_\_str\_\_}, \hyperpage{11}
     \subitem {feedForward}, \hyperpage{11}
+    \subitem {PerceptronLayer}, \hyperpage{9}
+  \item {PerceptronNetwork}, \hyperpage{11}
+    \subitem {\_\_str\_\_}, \hyperpage{12}
+    \subitem {feedForward}, \hyperpage{12}
     \subitem {PerceptronNetwork}, \hyperpage{11}
   \item {predict}
     \subitem {Perceptron}, \hyperpage{8}
@@ -51,10 +65,13 @@
   \indexspace
 
   \item {test.cpp}
-    \subitem {TEST\_CASE}, \hyperpage{18}
+    \subitem {CATCH\_CONFIG\_MAIN}, \hyperpage{27}
+    \subitem {EPOCHS}, \hyperpage{27}
+    \subitem {inputs}, \hyperpage{29}
+    \subitem {TEST\_CASE}, \hyperpage{27, 28}
   \item {TEST\_CASE}
-    \subitem {test.cpp}, \hyperpage{18}
+    \subitem {test.cpp}, \hyperpage{27, 28}
   \item {train}
-    \subitem {Perceptron}, \hyperpage{9}
+    \subitem {Perceptron}, \hyperpage{8}
 
 \end{theindex}

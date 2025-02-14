@@ -267,6 +267,13 @@ INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/v
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1pcr.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1pcr.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1pcr.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/courier/pcrr8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8r.tfm
 INPUT ./index.tex
 INPUT ./index.tex
 INPUT ./index.tex
@@ -276,9 +283,6 @@ INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/t
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
-INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1pcr.fd
-INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1pcr.fd
-INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1pcr.fd
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8t.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8t.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
@@ -301,31 +305,18 @@ INPUT ./files.tex
 INPUT ./files.tex
 INPUT ./files.tex
 INPUT files.tex
-INPUT ./classhalf_adder.tex
-INPUT ./classhalf_adder.tex
-INPUT ./classhalf_adder.tex
-INPUT ./classhalf_adder.tex
-INPUT classhalf_adder.tex
-INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1phv.fd
-INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1phv.fd
-INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1phv.fd
-INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8c.tfm
-INPUT ./structhalf_adder_output.tex
-INPUT ./structhalf_adder_output.tex
-INPUT ./structhalf_adder_output.tex
-INPUT ./structhalf_adder_output.tex
-INPUT structhalf_adder_output.tex
 INPUT ./class_perceptron.tex
 INPUT ./class_perceptron.tex
 INPUT ./class_perceptron.tex
 INPUT ./class_perceptron.tex
 INPUT class_perceptron.tex
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1phv.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1phv.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1phv.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8c.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8t.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
-INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvr8c.vf
-INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
-INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8t.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr8.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr6.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi8.tfm
@@ -345,12 +336,11 @@ INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/t
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8t.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8t.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8tn.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvr8c.vf
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvro8t.vf
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8r.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
-INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/courier/pcrr8t.vf
-INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8r.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/courier/pcrro8t.vf
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrro8r.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8tn.vf
@@ -367,16 +357,21 @@ INPUT ./class_perceptron_network.tex
 INPUT ./class_perceptron_network.tex
 INPUT ./class_perceptron_network.tex
 INPUT class_perceptron_network.tex
-INPUT ./half_adder_8hpp_source.tex
-INPUT ./half_adder_8hpp_source.tex
-INPUT ./half_adder_8hpp_source.tex
-INPUT ./half_adder_8hpp_source.tex
-INPUT half_adder_8hpp_source.tex
 INPUT ./perceptron_8hpp.tex
 INPUT ./perceptron_8hpp.tex
 INPUT ./perceptron_8hpp.tex
 INPUT ./perceptron_8hpp.tex
 INPUT perceptron_8hpp.tex
+INPUT ./perceptron_8hpp__incl.pdf
+INPUT ./perceptron_8hpp__incl.pdf
+INPUT ./perceptron_8hpp__incl.pdf
+INPUT ./perceptron_8hpp__incl.pdf
+INPUT ./perceptron_8hpp__incl.pdf
+INPUT ./perceptron_8hpp__dep__incl.pdf
+INPUT ./perceptron_8hpp__dep__incl.pdf
+INPUT ./perceptron_8hpp__dep__incl.pdf
+INPUT ./perceptron_8hpp__dep__incl.pdf
+INPUT ./perceptron_8hpp__dep__incl.pdf
 INPUT ./perceptron_8hpp_source.tex
 INPUT ./perceptron_8hpp_source.tex
 INPUT ./perceptron_8hpp_source.tex
@@ -387,6 +382,16 @@ INPUT ./perceptron_layer_8hpp.tex
 INPUT ./perceptron_layer_8hpp.tex
 INPUT ./perceptron_layer_8hpp.tex
 INPUT perceptron_layer_8hpp.tex
+INPUT ./perceptron_layer_8hpp__incl.pdf
+INPUT ./perceptron_layer_8hpp__incl.pdf
+INPUT ./perceptron_layer_8hpp__incl.pdf
+INPUT ./perceptron_layer_8hpp__incl.pdf
+INPUT ./perceptron_layer_8hpp__incl.pdf
+INPUT ./perceptron_layer_8hpp__dep__incl.pdf
+INPUT ./perceptron_layer_8hpp__dep__incl.pdf
+INPUT ./perceptron_layer_8hpp__dep__incl.pdf
+INPUT ./perceptron_layer_8hpp__dep__incl.pdf
+INPUT ./perceptron_layer_8hpp__dep__incl.pdf
 INPUT ./perceptron_layer_8hpp_source.tex
 INPUT ./perceptron_layer_8hpp_source.tex
 INPUT ./perceptron_layer_8hpp_source.tex
@@ -397,18 +402,87 @@ INPUT ./perceptron_network_8hpp.tex
 INPUT ./perceptron_network_8hpp.tex
 INPUT ./perceptron_network_8hpp.tex
 INPUT perceptron_network_8hpp.tex
+INPUT ./perceptron_network_8hpp__incl.pdf
+INPUT ./perceptron_network_8hpp__incl.pdf
+INPUT ./perceptron_network_8hpp__incl.pdf
+INPUT ./perceptron_network_8hpp__incl.pdf
+INPUT ./perceptron_network_8hpp__incl.pdf
+INPUT ./perceptron_network_8hpp__dep__incl.pdf
+INPUT ./perceptron_network_8hpp__dep__incl.pdf
+INPUT ./perceptron_network_8hpp__dep__incl.pdf
+INPUT ./perceptron_network_8hpp__dep__incl.pdf
+INPUT ./perceptron_network_8hpp__dep__incl.pdf
 INPUT ./perceptron_network_8hpp_source.tex
 INPUT ./perceptron_network_8hpp_source.tex
 INPUT ./perceptron_network_8hpp_source.tex
 INPUT ./perceptron_network_8hpp_source.tex
 INPUT perceptron_network_8hpp_source.tex
+INPUT ./perceptron_8cpp.tex
+INPUT ./perceptron_8cpp.tex
+INPUT ./perceptron_8cpp.tex
+INPUT ./perceptron_8cpp.tex
+INPUT perceptron_8cpp.tex
+INPUT ./perceptron_8cpp__incl.pdf
+INPUT ./perceptron_8cpp__incl.pdf
+INPUT ./perceptron_8cpp__incl.pdf
+INPUT ./perceptron_8cpp__incl.pdf
+INPUT ./perceptron_8cpp__incl.pdf
+INPUT ./perceptron_8cpp_source.tex
+INPUT ./perceptron_8cpp_source.tex
+INPUT ./perceptron_8cpp_source.tex
+INPUT ./perceptron_8cpp_source.tex
+INPUT perceptron_8cpp_source.tex
+INPUT ./perceptron_layer_8cpp.tex
+INPUT ./perceptron_layer_8cpp.tex
+INPUT ./perceptron_layer_8cpp.tex
+INPUT ./perceptron_layer_8cpp.tex
+INPUT perceptron_layer_8cpp.tex
+INPUT ./perceptron_layer_8cpp__incl.pdf
+INPUT ./perceptron_layer_8cpp__incl.pdf
+INPUT ./perceptron_layer_8cpp__incl.pdf
+INPUT ./perceptron_layer_8cpp__incl.pdf
+INPUT ./perceptron_layer_8cpp__incl.pdf
+INPUT ./perceptron_layer_8cpp_source.tex
+INPUT ./perceptron_layer_8cpp_source.tex
+INPUT ./perceptron_layer_8cpp_source.tex
+INPUT ./perceptron_layer_8cpp_source.tex
+INPUT perceptron_layer_8cpp_source.tex
+INPUT ./perceptron_network_8cpp.tex
+INPUT ./perceptron_network_8cpp.tex
+INPUT ./perceptron_network_8cpp.tex
+INPUT ./perceptron_network_8cpp.tex
+INPUT perceptron_network_8cpp.tex
+INPUT ./perceptron_network_8cpp__incl.pdf
+INPUT ./perceptron_network_8cpp__incl.pdf
+INPUT ./perceptron_network_8cpp__incl.pdf
+INPUT ./perceptron_network_8cpp__incl.pdf
+INPUT ./perceptron_network_8cpp__incl.pdf
+INPUT ./perceptron_network_8cpp_source.tex
+INPUT ./perceptron_network_8cpp_source.tex
+INPUT ./perceptron_network_8cpp_source.tex
+INPUT ./perceptron_network_8cpp_source.tex
+INPUT perceptron_network_8cpp_source.tex
 INPUT ./test_8cpp.tex
 INPUT ./test_8cpp.tex
 INPUT ./test_8cpp.tex
 INPUT ./test_8cpp.tex
 INPUT test_8cpp.tex
+INPUT ./test_8cpp__incl.pdf
+INPUT ./test_8cpp__incl.pdf
+INPUT ./test_8cpp__incl.pdf
+INPUT ./test_8cpp__incl.pdf
+INPUT ./test_8cpp__incl.pdf
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8c.tfm
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvro8c.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrb8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/courier/pcrb8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrb8r.tfm
+INPUT ./test_8cpp_source.tex
+INPUT ./test_8cpp_source.tex
+INPUT ./test_8cpp_source.tex
+INPUT ./test_8cpp_source.tex
+INPUT test_8cpp_source.tex
 INPUT ./refman.ind
 INPUT ./refman.ind
 INPUT refman.ind
@@ -425,6 +499,8 @@ INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/t
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrb8a.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrb8a.pfb
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb
 INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrro8a.pfb

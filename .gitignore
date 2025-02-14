@@ -38,3 +38,6 @@ src/test/Build/*
 
 # zsh
 *.zsh
+
+# Apple finder files
+.DS_Store

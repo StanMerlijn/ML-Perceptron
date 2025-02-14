@@ -44,7 +44,6 @@ std::vector<std::vector<int>> inputs = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
 
 /**
  * @brief Perceptron for INVERT Gate: Tests the perceptron's ability to learn the INVERT gate.
- * 
  */
 TEST_CASE("Perceptron for INVERT Gate", "[perceptron]") 
 {
@@ -92,8 +91,7 @@ TEST_CASE("Perceptron for OR Gate", "[perceptron]")
 
 /** 
  * @brief Perceptron for NOR Gate (3 inputs): Tests the perceptron's ability to learn the NOR gate with 3 inputs.
- *  The NOR gate is a digital logic gate that implements logical NOR
- * .
+ *  The NOR gate is a digital logic gate that implements logical NOR - it acts as an OR gate followed by a NOT gate.
  */
 TEST_CASE("Perceptron for NOR Gate (3 inputs)", "[perceptron]") {
     // Instantiate the perceptron with three weights.
@@ -225,11 +223,6 @@ TEST_CASE("PerceptronNetwork for half adder", "[perceptronNetwork]")
     PerceptronLayer hiddenLayer({n_or, n_and});
 
     // Output layer: compute XOR (for sum) and carry
-    // XOR = OR - AND; Perceptron with weights {1, -1} and bias -0.5
-    // x1 = 0, x2 = 0: 1 * 0 + -1 * 0 - 0.5 = -0.5
-    // x1 = 1, x2 = 0: 1 * 1 + -1 * 0 - 0.5 = 0.5
-    // x1 = 1, x2 = 1: 1 * 1 + -1 * 1 - 0.5 = -0.5
-    
     Perceptron n_xor({0.1, 0.1}, 0.1, 0.1);
     Perceptron n_carry({0.1, 0.1}, 0.1, 0.1);
 

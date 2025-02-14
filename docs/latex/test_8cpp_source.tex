@@ -18,177 +18,172 @@
 \DoxyCodeLine{\Hypertarget{test_8cpp_source_l00042}00042\ std::vector<std::vector<int>>\ inputs\ =\ \{\{0,\ 0\},\ \{0,\ 1\},\ \{1,\ 0\},\ \{1,\ 1\}\};}
 \DoxyCodeLine{\Hypertarget{test_8cpp_source_l00043}00043\ }
 \DoxyCodeLine{\Hypertarget{test_8cpp_source_l00044}00044\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00049}\mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{00049}}\ \mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{TEST\_CASE}}(\textcolor{stringliteral}{"{}Perceptron\ for\ INVERT\ Gate"{}},\ \textcolor{stringliteral}{"{}[perceptron]"{}})\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00050}00050\ \{}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00051}00051\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ invert\_gate(\{0.1,\ 0.1\},\ 1,\ 0.1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00052}00052\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{comment}{//\ Training\ data:\ for\ input\ 0\ we\ expect\ output\ 1,\ and\ for\ input\ 1\ we\ expect\ output\ 0.}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{comment}{//\ The\ second\ element\ in\ the\ input\ vector\ is\ always\ 0.}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00055}00055\ \ \ \ \ std::vector<std::vector<int>>\ inputsInverter\ =\ \{\{0,\ 0\},\ \{1,\ 0\}\};}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00056}00056\ \ \ \ \ std::vector<int>\ targets\ =\ \{1,\ 0\};}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00057}00057\ \ \ \ \ invert\_gate.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(inputsInverter,\ targets,\ EPOCHS);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00058}00058\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00059}00059\ \ \ \ \ REQUIRE(invert\_gate.predict(\{1,\ 0\})\ ==\ 0);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00060}00060\ \ \ \ \ REQUIRE(invert\_gate.predict(\{0,\ 1\})\ ==\ 1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00061}00061\ \}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00062}00062\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00066}\mbox{\hyperlink{test_8cpp_a78cea35aff05eba43ee086a2fdb3433d}{00066}}\ \mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{TEST\_CASE}}(\textcolor{stringliteral}{"{}Perceptron\ for\ AND\ Gate"{}},\ \textcolor{stringliteral}{"{}[perceptron]"{}})\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00067}00067\ \{}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00068}00068\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ p\_and(\{0.1,\ 0.1\},\ 1,\ 0.1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00069}00069\ \ \ \ \ std::vector<int>\ targets\ =\ \{0,0,0,1\};}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00070}00070\ \ \ \ \ p\_and.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(inputs,\ targets,\ EPOCHS);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00071}00071\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00072}00072\ \ \ \ \ REQUIRE(p\_and.predict(\{0,\ 0\})\ ==\ 0);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00073}00073\ \ \ \ \ REQUIRE(p\_and.predict(\{0,\ 1\})\ ==\ 0);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00074}00074\ \ \ \ \ REQUIRE(p\_and.predict(\{1,\ 0\})\ ==\ 0);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00075}00075\ \ \ \ \ REQUIRE(p\_and.predict(\{1,\ 1\})\ ==\ 1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00076}00076\ \}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00077}00077\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00081}\mbox{\hyperlink{test_8cpp_aef6604b65f7d80722bff589135697684}{00081}}\ \mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{TEST\_CASE}}(\textcolor{stringliteral}{"{}Perceptron\ for\ OR\ Gate"{}},\ \textcolor{stringliteral}{"{}[perceptron]"{}})\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00082}00082\ \{}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00083}00083\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ p\_or(\{0.1,\ 0.1\},\ 1,\ 0.1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00084}00084\ \ \ \ \ std::vector<int>\ targets\ =\ \{0,1,1,1\};}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00085}00085\ \ \ \ \ p\_or.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(inputs,\ targets,\ EPOCHS);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00086}00086\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00087}00087\ \ \ \ \ REQUIRE(p\_or.predict(\{0,\ 0\})\ ==\ 0);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00088}00088\ \ \ \ \ REQUIRE(p\_or.predict(\{0,\ 1\})\ ==\ 1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00089}00089\ \ \ \ \ REQUIRE(p\_or.predict(\{1,\ 0\})\ ==\ 1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00090}00090\ \ \ \ \ REQUIRE(p\_or.predict(\{1,\ 1\})\ ==\ 1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00091}00091\ \}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00092}00092\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00098}\mbox{\hyperlink{test_8cpp_ae444934a922059548542ef6a13515e35}{00098}}\ \mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{TEST\_CASE}}(\textcolor{stringliteral}{"{}Perceptron\ for\ NOR\ Gate\ (3\ inputs)"{}},\ \textcolor{stringliteral}{"{}[perceptron]"{}})\ \{}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00099}00099\ \ \ \ \ \textcolor{comment}{//\ Instantiate\ the\ perceptron\ with\ three\ weights.}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00100}00100\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ norGate(\{-\/0.1,\ -\/0.1,\ -\/0.1\},\ 1,\ 0.1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00101}00101\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00102}00102\ \ \ \ \ \textcolor{comment}{//\ Training\ data\ for\ a\ NOR\ gate\ with\ 3\ inputs:}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00103}00103\ \ \ \ \ \textcolor{comment}{//\ Only\ (0,0,0)\ should\ yield\ 1;\ all\ others\ yield\ 0.}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00104}00104\ \ \ \ \ std::vector<std::vector<int>>\ inputsNOR\ =\ \{}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00105}00105\ \ \ \ \ \ \ \ \ \{0,\ 0,\ 0\},\ \{0,\ 0,\ 1\},\ \{0,\ 1,\ 0\},\ \{1,\ 0,\ 0\},}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00106}00106\ \ \ \ \ \ \ \ \ \{1,\ 1,\ 0\},\ \{1,\ 0,\ 1\},\ \{0,\ 1,\ 1\},\ \{1,\ 1,\ 1\}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00107}00107\ \ \ \ \ \};\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00108}00108\ \ \ \ \ std::vector<int>\ targets\ =\ \{1,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0\};}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00109}00109\ \ \ \ \ norGate.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(inputsNOR,\ targets,\ EPOCHS);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00110}00110\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00111}00111\ \ \ \ \ REQUIRE(norGate.predict(\{0,\ 0,\ 0\})\ ==\ 1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00112}00112\ \ \ \ \ REQUIRE(norGate.predict(\{0,\ 0,\ 1\})\ ==\ 0);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00113}00113\ \ \ \ \ REQUIRE(norGate.predict(\{0,\ 1,\ 0\})\ ==\ 0);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00114}00114\ \ \ \ \ REQUIRE(norGate.predict(\{1,\ 0,\ 0\})\ ==\ 0);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00115}00115\ \ \ \ \ REQUIRE(norGate.predict(\{0,\ 1,\ 1\})\ ==\ 0);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00116}00116\ \ \ \ \ REQUIRE(norGate.predict(\{1,\ 0,\ 1\})\ ==\ 0);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00117}00117\ \ \ \ \ REQUIRE(norGate.predict(\{1,\ 1,\ 0\})\ ==\ 0);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00118}00118\ \ \ \ \ REQUIRE(norGate.predict(\{1,\ 1,\ 1\})\ ==\ 0);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00119}00119\ \}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00120}00120\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00124}\mbox{\hyperlink{test_8cpp_aeea69aa551afe50a8e3b05f3be47fe0f}{00124}}\ \mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{TEST\_CASE}}(\textcolor{stringliteral}{"{}Perceptron\ for\ 3-\/input\ Majority\ Gate"{}},\ \textcolor{stringliteral}{"{}[perceptron]"{}})\ \{}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00125}00125\ \ \ \ \ \textcolor{comment}{//\ Instantiate\ the\ perceptron\ with\ three\ inputs.\ Here\ we\ choose\ small\ positive\ initial\ weights}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00126}00126\ \ \ \ \ \textcolor{comment}{//\ and\ a\ negative\ bias.\ Adjust\ these\ parameters\ if\ necessary\ to\ speed\ up\ convergence.}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00127}00127\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ majorityGate(\{0.1,\ 0.1,\ 0.1\},\ -\/0.2,\ 0.1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00128}00128\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00129}00129\ \ \ \ \ \textcolor{comment}{//\ Training\ data\ for\ a\ majority\ gate:}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00130}00130\ \ \ \ \ \textcolor{comment}{//\ Output\ 1\ if\ at\ least\ two\ inputs\ are\ 1,\ else\ output\ 0.}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00131}00131\ \ \ \ \ std::vector<std::vector<int>>\ inputsMajority\ =\ \{}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00132}00132\ \ \ \ \ \ \ \ \ \{0,\ 0,\ 0\},\ \{0,\ 0,\ 1\},\ \{0,\ 1,\ 0\},\ \{1,\ 0,\ 0\},\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00133}00133\ \ \ \ \ \ \ \ \ \{0,\ 1,\ 1\},\ \{1,\ 0,\ 1\},\ \{1,\ 1,\ 0\},\ \{1,\ 1,\ 1\}\ \ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00134}00134\ \ \ \ \ \};}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00135}00135\ \ \ \ \ std::vector<int>\ y\ =\ \{0,\ 0,\ 0,\ 0,\ 1,\ 1,\ 1,\ 1\};}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00136}00136\ \ \ \ \ majorityGate.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(inputsMajority,\ y,\ EPOCHS);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00137}00137\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00138}00138\ \ \ \ \ REQUIRE(majorityGate.predict(\{0,\ 0,\ 0\})\ ==\ 0);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00139}00139\ \ \ \ \ REQUIRE(majorityGate.predict(\{0,\ 0,\ 1\})\ ==\ 0);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00140}00140\ \ \ \ \ REQUIRE(majorityGate.predict(\{0,\ 1,\ 0\})\ ==\ 0);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00141}00141\ \ \ \ \ REQUIRE(majorityGate.predict(\{1,\ 0,\ 0\})\ ==\ 0);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00142}00142\ \ \ \ \ REQUIRE(majorityGate.predict(\{0,\ 1,\ 1\})\ ==\ 1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00143}00143\ \ \ \ \ REQUIRE(majorityGate.predict(\{1,\ 0,\ 1\})\ ==\ 1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00144}00144\ \ \ \ \ REQUIRE(majorityGate.predict(\{1,\ 1,\ 0\})\ ==\ 1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00145}00145\ \ \ \ \ REQUIRE(majorityGate.predict(\{1,\ 1,\ 1\})\ ==\ 1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00146}00146\ \}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00147}00147\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00152}\mbox{\hyperlink{test_8cpp_a279af21e3f8ff92c00abefba3ea0ec7f}{00152}}\ \mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{TEST\_CASE}}(\textcolor{stringliteral}{"{}PerceptronLayer\ for\ AND\ and\ OR\ Gates"{}},\ \textcolor{stringliteral}{"{}[perceptronLayer]"{}})\ \{}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00153}00153\ \ \ \ \ \textcolor{comment}{//\ Training\ data\ common\ to\ both\ gates:}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00154}00154\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ p\_or(\{0.1,\ 0.1\},\ 1,\ 0.1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00155}00155\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ p\_and(\{0.1,\ 0.1\},\ 1,\ 0.1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00156}00156\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00157}00157\ \ \ \ \ \textcolor{comment}{//\ Training\ the\ OR\ and\ AND\ gates.}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00158}00158\ \ \ \ \ p\_or.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(inputs,\ \{0,\ 1,\ 1,\ 1\},\ EPOCHS);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00159}00159\ \ \ \ \ p\_and.train(inputs,\ \{0,\ 0,\ 0,\ 1\},\ EPOCHS);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00160}00160\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00161}00161\ \ \ \ \ \textcolor{comment}{//\ Create\ a\ layer\ with\ two\ neurons\ (2\ inputs)\ for\ the\ AND\ gate\ and\ a\ learning\ rate\ of\ 0.1.}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00162}00162\ \ \ \ \ \textcolor{comment}{//\ Train\ the\ layer\ with\ the\ AND\ gate\ targets\ and\ OR\ gate\ targets.}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00163}00163\ \ \ \ \ \mbox{\hyperlink{class_perceptron_layer}{PerceptronLayer}}\ andLayer(\{p\_and,\ p\_or\});}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00164}00164\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00165}00165\ \ \ \ \ \textcolor{comment}{//\ Define\ expected\ outputs\ for\ the\ AND\ gate\ and\ OR\ gate.}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00166}00166\ \ \ \ \ std::vector<int>\ out00\ =\ \{0,\ 0\};}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00167}00167\ \ \ \ \ std::vector<int>\ out01\ =\ \{0,\ 1\};}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00168}00168\ \ \ \ \ std::vector<int>\ out11\ =\ \{1,\ 1\};}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00169}00169\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00170}00170\ \ \ \ \ REQUIRE(andLayer.feedForward(\{0,\ 0\})\ ==\ out00);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00171}00171\ \ \ \ \ REQUIRE(andLayer.feedForward(\{0,\ 1\})\ ==\ out01);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00172}00172\ \ \ \ \ REQUIRE(andLayer.feedForward(\{1,\ 0\})\ ==\ out01);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00173}00173\ \ \ \ \ REQUIRE(andLayer.feedForward(\{1,\ 1\})\ ==\ out11);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00174}00174\ \}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00175}00175\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00181}\mbox{\hyperlink{test_8cpp_afcae0369c0995b94919b7558505a86ed}{00181}}\ \mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{TEST\_CASE}}(\textcolor{stringliteral}{"{}PerceptronNetwork\ for\ the\ XOR\ gate\ with\ 2\ inputs"{}},\ \textcolor{stringliteral}{"{}[perceptronNetwork]"{}})\ \{}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00182}00182\ \ \ \ \ \textcolor{comment}{//\ Create\ a\ network\ with\ two\ layers:\ one\ for\ the\ AND\ gate\ and\ one\ for\ the\ OR\ gate.}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00183}00183\ \ \ \ \ \textcolor{comment}{//\ OR\ and\ NAND\ gates\ for\ the\ input\ layer}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00184}00184\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ p\_or(\{0.1,\ 0.1\},\ 1,\ 0.1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00185}00185\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ p\_nand(\{0.1,\ 0.1\},\ 1,\ 0.1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00186}00186\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ p\_and(\{0.1,\ 0.1\},\ 1,\ 0.1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00187}00187\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00188}00188\ \ \ \ \ \textcolor{comment}{//\ Training\ The\ gates}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00189}00189\ \ \ \ \ p\_or.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(inputs,\ \ \{0,\ 1,\ 1,\ 1\}\ ,\ EPOCHS);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00190}00190\ \ \ \ \ p\_nand.train(inputs,\ \{1,\ 1,\ 1,\ 0\},\ EPOCHS);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00191}00191\ \ \ \ \ p\_and.train(inputs,\ \ \{0,\ 0,\ 0,\ 1\}\ ,\ EPOCHS);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00192}00192\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00193}00193\ \ \ \ \ \mbox{\hyperlink{class_perceptron_layer}{PerceptronLayer}}\ inputLayer(\{p\_or,\ p\_nand\});}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00194}00194\ \ \ \ \ \mbox{\hyperlink{class_perceptron_layer}{PerceptronLayer}}\ outputLayer(\{p\_and\});}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00048}\mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{00048}}\ \mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{TEST\_CASE}}(\textcolor{stringliteral}{"{}Perceptron\ for\ INVERT\ Gate"{}},\ \textcolor{stringliteral}{"{}[perceptron]"{}})\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00049}00049\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00050}00050\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ invert\_gate(\{0.1,\ 0.1\},\ 1,\ 0.1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00052}00052\ \ \ \ \ \textcolor{comment}{//\ Training\ data:\ for\ input\ 0\ we\ expect\ output\ 1,\ and\ for\ input\ 1\ we\ expect\ output\ 0.}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{comment}{//\ The\ second\ element\ in\ the\ input\ vector\ is\ always\ 0.}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00054}00054\ \ \ \ \ std::vector<std::vector<int>>\ inputsInverter\ =\ \{\{0,\ 0\},\ \{1,\ 0\}\};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00055}00055\ \ \ \ \ std::vector<int>\ targets\ =\ \{1,\ 0\};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00056}00056\ \ \ \ \ invert\_gate.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(inputsInverter,\ targets,\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00058}00058\ \ \ \ \ REQUIRE(invert\_gate.predict(\{1,\ 0\})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00059}00059\ \ \ \ \ REQUIRE(invert\_gate.predict(\{0,\ 1\})\ ==\ 1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00060}00060\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00065}\mbox{\hyperlink{test_8cpp_a78cea35aff05eba43ee086a2fdb3433d}{00065}}\ \mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{TEST\_CASE}}(\textcolor{stringliteral}{"{}Perceptron\ for\ AND\ Gate"{}},\ \textcolor{stringliteral}{"{}[perceptron]"{}})\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00066}00066\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00067}00067\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ p\_and(\{0.1,\ 0.1\},\ 1,\ 0.1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00068}00068\ \ \ \ \ std::vector<int>\ targets\ =\ \{0,0,0,1\};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00069}00069\ \ \ \ \ p\_and.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(inputs,\ targets,\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00071}00071\ \ \ \ \ REQUIRE(p\_and.predict(\{0,\ 0\})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00072}00072\ \ \ \ \ REQUIRE(p\_and.predict(\{0,\ 1\})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00073}00073\ \ \ \ \ REQUIRE(p\_and.predict(\{1,\ 0\})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00074}00074\ \ \ \ \ REQUIRE(p\_and.predict(\{1,\ 1\})\ ==\ 1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00075}00075\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00080}\mbox{\hyperlink{test_8cpp_aef6604b65f7d80722bff589135697684}{00080}}\ \mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{TEST\_CASE}}(\textcolor{stringliteral}{"{}Perceptron\ for\ OR\ Gate"{}},\ \textcolor{stringliteral}{"{}[perceptron]"{}})\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00081}00081\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00082}00082\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ p\_or(\{0.1,\ 0.1\},\ 1,\ 0.1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00083}00083\ \ \ \ \ std::vector<int>\ targets\ =\ \{0,1,1,1\};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00084}00084\ \ \ \ \ p\_or.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(inputs,\ targets,\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00086}00086\ \ \ \ \ REQUIRE(p\_or.predict(\{0,\ 0\})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00087}00087\ \ \ \ \ REQUIRE(p\_or.predict(\{0,\ 1\})\ ==\ 1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00088}00088\ \ \ \ \ REQUIRE(p\_or.predict(\{1,\ 0\})\ ==\ 1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00089}00089\ \ \ \ \ REQUIRE(p\_or.predict(\{1,\ 1\})\ ==\ 1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00090}00090\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00096}\mbox{\hyperlink{test_8cpp_ae444934a922059548542ef6a13515e35}{00096}}\ \mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{TEST\_CASE}}(\textcolor{stringliteral}{"{}Perceptron\ for\ NOR\ Gate\ (3\ inputs)"{}},\ \textcolor{stringliteral}{"{}[perceptron]"{}})\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00097}00097\ \ \ \ \ \textcolor{comment}{//\ Instantiate\ the\ perceptron\ with\ three\ weights.}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00098}00098\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ norGate(\{-\/0.1,\ -\/0.1,\ -\/0.1\},\ 1,\ 0.1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00100}00100\ \ \ \ \ \textcolor{comment}{//\ Training\ data\ for\ a\ NOR\ gate\ with\ 3\ inputs:}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00101}00101\ \ \ \ \ \textcolor{comment}{//\ Only\ (0,0,0)\ should\ yield\ 1;\ all\ others\ yield\ 0.}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00102}00102\ \ \ \ \ std::vector<std::vector<int>>\ inputsNOR\ =\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00103}00103\ \ \ \ \ \ \ \ \ \{0,\ 0,\ 0\},\ \{0,\ 0,\ 1\},\ \{0,\ 1,\ 0\},\ \{1,\ 0,\ 0\},}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00104}00104\ \ \ \ \ \ \ \ \ \{1,\ 1,\ 0\},\ \{1,\ 0,\ 1\},\ \{0,\ 1,\ 1\},\ \{1,\ 1,\ 1\}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00105}00105\ \ \ \ \ \};\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00106}00106\ \ \ \ \ std::vector<int>\ targets\ =\ \{1,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0\};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00107}00107\ \ \ \ \ norGate.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(inputsNOR,\ targets,\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00109}00109\ \ \ \ \ REQUIRE(norGate.predict(\{0,\ 0,\ 0\})\ ==\ 1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00110}00110\ \ \ \ \ REQUIRE(norGate.predict(\{0,\ 0,\ 1\})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00111}00111\ \ \ \ \ REQUIRE(norGate.predict(\{0,\ 1,\ 0\})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00112}00112\ \ \ \ \ REQUIRE(norGate.predict(\{1,\ 0,\ 0\})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00113}00113\ \ \ \ \ REQUIRE(norGate.predict(\{0,\ 1,\ 1\})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00114}00114\ \ \ \ \ REQUIRE(norGate.predict(\{1,\ 0,\ 1\})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00115}00115\ \ \ \ \ REQUIRE(norGate.predict(\{1,\ 1,\ 0\})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00116}00116\ \ \ \ \ REQUIRE(norGate.predict(\{1,\ 1,\ 1\})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00117}00117\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00122}\mbox{\hyperlink{test_8cpp_aeea69aa551afe50a8e3b05f3be47fe0f}{00122}}\ \mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{TEST\_CASE}}(\textcolor{stringliteral}{"{}Perceptron\ for\ 3-\/input\ Majority\ Gate"{}},\ \textcolor{stringliteral}{"{}[perceptron]"{}})\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00123}00123\ \ \ \ \ \textcolor{comment}{//\ Instantiate\ the\ perceptron\ with\ three\ inputs.\ Here\ we\ choose\ small\ positive\ initial\ weights}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00124}00124\ \ \ \ \ \textcolor{comment}{//\ and\ a\ negative\ bias.\ Adjust\ these\ parameters\ if\ necessary\ to\ speed\ up\ convergence.}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00125}00125\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ majorityGate(\{0.1,\ 0.1,\ 0.1\},\ -\/0.2,\ 0.1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00126}00126\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00127}00127\ \ \ \ \ \textcolor{comment}{//\ Training\ data\ for\ a\ majority\ gate:}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00128}00128\ \ \ \ \ \textcolor{comment}{//\ Output\ 1\ if\ at\ least\ two\ inputs\ are\ 1,\ else\ output\ 0.}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00129}00129\ \ \ \ \ std::vector<std::vector<int>>\ inputsMajority\ =\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00130}00130\ \ \ \ \ \ \ \ \ \{0,\ 0,\ 0\},\ \{0,\ 0,\ 1\},\ \{0,\ 1,\ 0\},\ \{1,\ 0,\ 0\},\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00131}00131\ \ \ \ \ \ \ \ \ \{0,\ 1,\ 1\},\ \{1,\ 0,\ 1\},\ \{1,\ 1,\ 0\},\ \{1,\ 1,\ 1\}\ \ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00132}00132\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00133}00133\ \ \ \ \ std::vector<int>\ y\ =\ \{0,\ 0,\ 0,\ 0,\ 1,\ 1,\ 1,\ 1\};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00134}00134\ \ \ \ \ majorityGate.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(inputsMajority,\ y,\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00135}00135\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00136}00136\ \ \ \ \ REQUIRE(majorityGate.predict(\{0,\ 0,\ 0\})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00137}00137\ \ \ \ \ REQUIRE(majorityGate.predict(\{0,\ 0,\ 1\})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00138}00138\ \ \ \ \ REQUIRE(majorityGate.predict(\{0,\ 1,\ 0\})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00139}00139\ \ \ \ \ REQUIRE(majorityGate.predict(\{1,\ 0,\ 0\})\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00140}00140\ \ \ \ \ REQUIRE(majorityGate.predict(\{0,\ 1,\ 1\})\ ==\ 1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00141}00141\ \ \ \ \ REQUIRE(majorityGate.predict(\{1,\ 0,\ 1\})\ ==\ 1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00142}00142\ \ \ \ \ REQUIRE(majorityGate.predict(\{1,\ 1,\ 0\})\ ==\ 1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00143}00143\ \ \ \ \ REQUIRE(majorityGate.predict(\{1,\ 1,\ 1\})\ ==\ 1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00144}00144\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00145}00145\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00150}\mbox{\hyperlink{test_8cpp_a279af21e3f8ff92c00abefba3ea0ec7f}{00150}}\ \mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{TEST\_CASE}}(\textcolor{stringliteral}{"{}PerceptronLayer\ for\ AND\ and\ OR\ Gates"{}},\ \textcolor{stringliteral}{"{}[perceptronLayer]"{}})\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00151}00151\ \ \ \ \ \textcolor{comment}{//\ Training\ data\ common\ to\ both\ gates:}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00152}00152\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ p\_or(\{0.1,\ 0.1\},\ 1,\ 0.1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00153}00153\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ p\_and(\{0.1,\ 0.1\},\ 1,\ 0.1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00154}00154\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00155}00155\ \ \ \ \ \textcolor{comment}{//\ Training\ the\ OR\ and\ AND\ gates.}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00156}00156\ \ \ \ \ p\_or.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(inputs,\ \{0,\ 1,\ 1,\ 1\},\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00157}00157\ \ \ \ \ p\_and.train(inputs,\ \{0,\ 0,\ 0,\ 1\},\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00158}00158\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00159}00159\ \ \ \ \ \textcolor{comment}{//\ Create\ a\ layer\ with\ two\ neurons\ (2\ inputs)\ for\ the\ AND\ gate\ and\ a\ learning\ rate\ of\ 0.1.}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00160}00160\ \ \ \ \ \textcolor{comment}{//\ Train\ the\ layer\ with\ the\ AND\ gate\ targets\ and\ OR\ gate\ targets.}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00161}00161\ \ \ \ \ \mbox{\hyperlink{class_perceptron_layer}{PerceptronLayer}}\ andLayer(\{p\_and,\ p\_or\});}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00162}00162\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00163}00163\ \ \ \ \ \textcolor{comment}{//\ Define\ expected\ outputs\ for\ the\ AND\ gate\ and\ OR\ gate.}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00164}00164\ \ \ \ \ std::vector<int>\ out00\ =\ \{0,\ 0\};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00165}00165\ \ \ \ \ std::vector<int>\ out01\ =\ \{0,\ 1\};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00166}00166\ \ \ \ \ std::vector<int>\ out11\ =\ \{1,\ 1\};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00167}00167\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00168}00168\ \ \ \ \ REQUIRE(andLayer.feedForward(\{0,\ 0\})\ ==\ out00);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00169}00169\ \ \ \ \ REQUIRE(andLayer.feedForward(\{0,\ 1\})\ ==\ out01);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00170}00170\ \ \ \ \ REQUIRE(andLayer.feedForward(\{1,\ 0\})\ ==\ out01);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00171}00171\ \ \ \ \ REQUIRE(andLayer.feedForward(\{1,\ 1\})\ ==\ out11);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00172}00172\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00173}00173\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00179}\mbox{\hyperlink{test_8cpp_afcae0369c0995b94919b7558505a86ed}{00179}}\ \mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{TEST\_CASE}}(\textcolor{stringliteral}{"{}PerceptronNetwork\ for\ the\ XOR\ gate\ with\ 2\ inputs"{}},\ \textcolor{stringliteral}{"{}[perceptronNetwork]"{}})\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00180}00180\ \ \ \ \ \textcolor{comment}{//\ Create\ a\ network\ with\ two\ layers:\ one\ for\ the\ AND\ gate\ and\ one\ for\ the\ OR\ gate.}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00181}00181\ \ \ \ \ \textcolor{comment}{//\ OR\ and\ NAND\ gates\ for\ the\ input\ layer}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00182}00182\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ p\_or(\{0.1,\ 0.1\},\ 1,\ 0.1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00183}00183\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ p\_nand(\{0.1,\ 0.1\},\ 1,\ 0.1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00184}00184\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ p\_and(\{0.1,\ 0.1\},\ 1,\ 0.1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00185}00185\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00186}00186\ \ \ \ \ \textcolor{comment}{//\ Training\ The\ gates}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00187}00187\ \ \ \ \ p\_or.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(inputs,\ \ \{0,\ 1,\ 1,\ 1\}\ ,\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00188}00188\ \ \ \ \ p\_nand.train(inputs,\ \{1,\ 1,\ 1,\ 0\},\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00189}00189\ \ \ \ \ p\_and.train(inputs,\ \ \{0,\ 0,\ 0,\ 1\}\ ,\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00190}00190\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00191}00191\ \ \ \ \ \mbox{\hyperlink{class_perceptron_layer}{PerceptronLayer}}\ inputLayer(\{p\_or,\ p\_nand\});}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00192}00192\ \ \ \ \ \mbox{\hyperlink{class_perceptron_layer}{PerceptronLayer}}\ outputLayer(\{p\_and\});}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00193}00193\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00194}00194\ \ \ \ \ \mbox{\hyperlink{class_perceptron_network}{PerceptronNetwork}}\ xor\_network(\{inputLayer,\ outputLayer\});}
 \DoxyCodeLine{\Hypertarget{test_8cpp_source_l00195}00195\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00196}00196\ \ \ \ \ \mbox{\hyperlink{class_perceptron_network}{PerceptronNetwork}}\ xor\_network(\{inputLayer,\ outputLayer\});}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00197}00197\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00198}00198\ \ \ \ \ \textcolor{comment}{//\ Define\ expected\ outputs\ for\ the\ XOR\ gate.}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00199}00199\ \ \ \ \ std::vector<int>\ out00\ =\ \{0\};}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00200}00200\ \ \ \ \ std::vector<int>\ out01\ =\ \{1\};}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00201}00201\ \ \ \ \ std::vector<int>\ out10\ =\ \{1\};}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00202}00202\ \ \ \ \ std::vector<int>\ out11\ =\ \{0\};}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00203}00203\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00204}00204\ \ \ \ \ \textcolor{comment}{//\ Verify\ network's\ predictions\ for\ the\ XOR\ gate.}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00205}00205\ \ \ \ \ REQUIRE(xor\_network.feedForward(\{0,\ 0\})\ ==\ out00);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00206}00206\ \ \ \ \ REQUIRE(xor\_network.feedForward(\{0,\ 1\})\ ==\ out01);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00207}00207\ \ \ \ \ REQUIRE(xor\_network.feedForward(\{1,\ 0\})\ ==\ out10);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00208}00208\ \ \ \ \ REQUIRE(xor\_network.feedForward(\{1,\ 1\})\ ==\ out11);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00209}00209\ \}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00210}00210\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00216}\mbox{\hyperlink{test_8cpp_a142a067880136ba5652cf69463566ba4}{00216}}\ \mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{TEST\_CASE}}(\textcolor{stringliteral}{"{}PerceptronNetwork\ for\ half\ adder"{}},\ \textcolor{stringliteral}{"{}[perceptronNetwork]"{}})}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00217}00217\ \{}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00218}00218\ \ \ \ \ \textcolor{comment}{//\ Hidden\ layer:\ compute\ OR\ and\ AND}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00219}00219\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ n\_or(\{0.1,\ 0.1\},\ 0.1,\ 0.1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00220}00220\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ n\_and(\{0.1,\ 0.1\},\ 0.1,\ 0.1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00221}00221\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00222}00222\ \ \ \ \ n\_or.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(inputs,\ \{0,\ 1,\ 1,\ 1\},\ EPOCHS);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00223}00223\ \ \ \ \ n\_and.train(inputs,\ \{0,\ 0,\ 0,\ 1\},\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00196}00196\ \ \ \ \ \textcolor{comment}{//\ Define\ expected\ outputs\ for\ the\ XOR\ gate.}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00197}00197\ \ \ \ \ std::vector<int>\ out00\ =\ \{0\};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00198}00198\ \ \ \ \ std::vector<int>\ out01\ =\ \{1\};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00199}00199\ \ \ \ \ std::vector<int>\ out10\ =\ \{1\};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00200}00200\ \ \ \ \ std::vector<int>\ out11\ =\ \{0\};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00201}00201\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00202}00202\ \ \ \ \ \textcolor{comment}{//\ Verify\ network's\ predictions\ for\ the\ XOR\ gate.}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00203}00203\ \ \ \ \ REQUIRE(xor\_network.feedForward(\{0,\ 0\})\ ==\ out00);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00204}00204\ \ \ \ \ REQUIRE(xor\_network.feedForward(\{0,\ 1\})\ ==\ out01);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00205}00205\ \ \ \ \ REQUIRE(xor\_network.feedForward(\{1,\ 0\})\ ==\ out10);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00206}00206\ \ \ \ \ REQUIRE(xor\_network.feedForward(\{1,\ 1\})\ ==\ out11);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00207}00207\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00208}00208\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00214}\mbox{\hyperlink{test_8cpp_a142a067880136ba5652cf69463566ba4}{00214}}\ \mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{TEST\_CASE}}(\textcolor{stringliteral}{"{}PerceptronNetwork\ for\ half\ adder"{}},\ \textcolor{stringliteral}{"{}[perceptronNetwork]"{}})}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00215}00215\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00216}00216\ \ \ \ \ \textcolor{comment}{//\ Hidden\ layer:\ compute\ OR\ and\ AND}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00217}00217\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ n\_or(\{0.1,\ 0.1\},\ 0.1,\ 0.1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00218}00218\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ n\_and(\{0.1,\ 0.1\},\ 0.1,\ 0.1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00219}00219\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00220}00220\ \ \ \ \ n\_or.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(inputs,\ \{0,\ 1,\ 1,\ 1\},\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00221}00221\ \ \ \ \ n\_and.train(inputs,\ \{0,\ 0,\ 0,\ 1\},\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00222}00222\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00223}00223\ \ \ \ \ \mbox{\hyperlink{class_perceptron_layer}{PerceptronLayer}}\ hiddenLayer(\{n\_or,\ n\_and\});}
 \DoxyCodeLine{\Hypertarget{test_8cpp_source_l00224}00224\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00225}00225\ \ \ \ \ \mbox{\hyperlink{class_perceptron_layer}{PerceptronLayer}}\ hiddenLayer(\{n\_or,\ n\_and\});}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00226}00226\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00227}00227\ \ \ \ \ \textcolor{comment}{//\ Output\ layer:\ compute\ XOR\ (for\ sum)\ and\ carry}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00228}00228\ \ \ \ \ \textcolor{comment}{//\ XOR\ =\ OR\ -\/\ AND;\ Perceptron\ with\ weights\ \{1,\ -\/1\}\ and\ bias\ -\/0.5}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00229}00229\ \ \ \ \ \textcolor{comment}{//\ x1\ =\ 0,\ x2\ =\ 0:\ 1\ *\ 0\ +\ -\/1\ *\ 0\ -\/\ 0.5\ =\ -\/0.5}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00230}00230\ \ \ \ \ \textcolor{comment}{//\ x1\ =\ 1,\ x2\ =\ 0:\ 1\ *\ 1\ +\ -\/1\ *\ 0\ -\/\ 0.5\ =\ 0.5}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00231}00231\ \ \ \ \ \textcolor{comment}{//\ x1\ =\ 1,\ x2\ =\ 1:\ 1\ *\ 1\ +\ -\/1\ *\ 1\ -\/\ 0.5\ =\ -\/0.5}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00232}00232\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00233}00233\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ n\_xor(\{0.1,\ 0.1\},\ 0.1,\ 0.1);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00234}00234\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ n\_carry(\{0.1,\ 0.1\},\ 0.1,\ 0.1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00225}00225\ \ \ \ \ \textcolor{comment}{//\ Output\ layer:\ compute\ XOR\ (for\ sum)\ and\ carry}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00226}00226\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ n\_xor(\{0.1,\ 0.1\},\ 0.1,\ 0.1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00227}00227\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ n\_carry(\{0.1,\ 0.1\},\ 0.1,\ 0.1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00228}00228\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00229}00229\ \ \ \ \ n\_xor.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(\{\{0,\ 0\},\ \{1,\ 0\},\ \{1,\ 1\}\},\ \{0,\ 1,\ 0\},\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00230}00230\ \ \ \ \ n\_carry.train(inputs,\ \{0,\ 0,\ 0,\ 1\},\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00231}00231\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00232}00232\ \ \ \ \ \mbox{\hyperlink{class_perceptron_layer}{PerceptronLayer}}\ outputLayer(\{n\_xor,\ n\_carry\});}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00233}00233\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00234}00234\ \ \ \ \ \mbox{\hyperlink{class_perceptron_network}{PerceptronNetwork}}\ halfAdder(\{hiddenLayer,\ outputLayer\});}
 \DoxyCodeLine{\Hypertarget{test_8cpp_source_l00235}00235\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00236}00236\ \ \ \ \ n\_xor.\mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(\{\{0,\ 0\},\ \{1,\ 0\},\ \{1,\ 1\}\},\ \{0,\ 1,\ 0\},\ EPOCHS);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00237}00237\ \ \ \ \ n\_carry.train(inputs,\ \{0,\ 0,\ 0,\ 1\},\ EPOCHS);}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00238}00238\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00239}00239\ \ \ \ \ \mbox{\hyperlink{class_perceptron_layer}{PerceptronLayer}}\ outputLayer(\{n\_xor,\ n\_carry\});}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00240}00240\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00241}00241\ \ \ \ \ \mbox{\hyperlink{class_perceptron_network}{PerceptronNetwork}}\ halfAdder(\{hiddenLayer,\ outputLayer\});}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00242}00242\ }
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00243}00243\ \ \ \ \ \textcolor{comment}{//\ Test\ cases\ for\ half\ adder:\ \{Sum,\ Carry\}}}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00244}00244\ \ \ \ \ REQUIRE(halfAdder.feedForward(\{0,\ 0\})\ ==\ std::vector<int>\{0,\ 0\});}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00245}00245\ \ \ \ \ REQUIRE(halfAdder.feedForward(\{0,\ 1\})\ ==\ std::vector<int>\{1,\ 0\});}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00246}00246\ \ \ \ \ REQUIRE(halfAdder.feedForward(\{1,\ 0\})\ ==\ std::vector<int>\{1,\ 0\});}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00247}00247\ \ \ \ \ REQUIRE(halfAdder.feedForward(\{1,\ 1\})\ ==\ std::vector<int>\{0,\ 1\});}
-\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00248}00248\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00236}00236\ \ \ \ \ \textcolor{comment}{//\ Test\ cases\ for\ half\ adder:\ \{Sum,\ Carry\}}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00237}00237\ \ \ \ \ REQUIRE(halfAdder.feedForward(\{0,\ 0\})\ ==\ std::vector<int>\{0,\ 0\});}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00238}00238\ \ \ \ \ REQUIRE(halfAdder.feedForward(\{0,\ 1\})\ ==\ std::vector<int>\{1,\ 0\});}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00239}00239\ \ \ \ \ REQUIRE(halfAdder.feedForward(\{1,\ 0\})\ ==\ std::vector<int>\{1,\ 0\});}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00240}00240\ \ \ \ \ REQUIRE(halfAdder.feedForward(\{1,\ 1\})\ ==\ std::vector<int>\{0,\ 1\});}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00241}00241\ \}}
 
 \end{DoxyCode}

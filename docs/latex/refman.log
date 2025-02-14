@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.2.3)  14 FEB 2025 13:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.2.3)  14 FEB 2025 17:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1161,17 +1161,17 @@ Package rerunfilecheck Info: File `refman.out' has not changed.
 (rerunfilecheck)             Checksum: DA0F5A658F12731AEBA5159861ABDEB1;15615.
  ) 
 Here is how much of TeX's memory you used:
- 18934 strings out of 473530
- 322209 string characters out of 5704182
- 729302 words of memory out of 5000000
+ 18929 strings out of 473530
+ 322094 string characters out of 5704182
+ 730302 words of memory out of 5000000
  41264 multiletter control sequences out of 15000+600000
  615786 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,16n,117p,731b,749s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc}</Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrb8a.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrro8a.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvb8a.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvb8ac.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pfb></Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (37 pages, 459130 bytes).
+Output written on refman.pdf (37 pages, 458349 bytes).
 PDF statistics:
- 1509 PDF objects out of 1728 (max. 8388607)
- 530 named destinations out of 1000 (max. 500000)
+ 1503 PDF objects out of 1728 (max. 8388607)
+ 525 named destinations out of 1000 (max. 500000)
  603 words of extra memory for PDF output out of 10000 (max. 10000000)
 

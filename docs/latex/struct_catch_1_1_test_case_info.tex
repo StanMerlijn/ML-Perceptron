@@ -1,0 +1,164 @@
+\doxysection{Catch\+::Test\+Case\+Info Struct Reference}
+\hypertarget{struct_catch_1_1_test_case_info}{}\label{struct_catch_1_1_test_case_info}\index{Catch::TestCaseInfo@{Catch::TestCaseInfo}}
+Inheritance diagram for Catch\+::Test\+Case\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_catch_1_1_test_case_info}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Special\+Properties} \{ \newline
+{\bfseries None} = 0
+, {\bfseries Is\+Hidden} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 1
+, {\bfseries Should\+Fail} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 2
+, {\bfseries May\+Fail} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 3
+, \newline
+{\bfseries Throws} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 4
+, {\bfseries Non\+Portable} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5
+, {\bfseries Benchmark} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 6
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_catch_1_1_test_case_info_ad1a6b08b5a83d1c5eb4596b727b5305f}\label{struct_catch_1_1_test_case_info_ad1a6b08b5a83d1c5eb4596b727b5305f} 
+{\bfseries Test\+Case\+Info} (std\+::string const \&\+\_\+name, std\+::string const \&\+\_\+class\+Name, std\+::string const \&\+\_\+description, std\+::vector$<$ std\+::string $>$ const \&\+\_\+tags, \mbox{\hyperlink{struct_catch_1_1_source_line_info}{Source\+Line\+Info}} const \&\+\_\+line\+Info)
+\item 
+\Hypertarget{struct_catch_1_1_test_case_info_a934b1a0952700743e99d62ec1731a2e2}\label{struct_catch_1_1_test_case_info_a934b1a0952700743e99d62ec1731a2e2} 
+bool {\bfseries is\+Hidden} () const
+\item 
+\Hypertarget{struct_catch_1_1_test_case_info_afc70d4379a2070cc22b693ffe3932c1a}\label{struct_catch_1_1_test_case_info_afc70d4379a2070cc22b693ffe3932c1a} 
+bool {\bfseries throws} () const
+\item 
+\Hypertarget{struct_catch_1_1_test_case_info_a5f37291295e3a6de2dd85324c941edaf}\label{struct_catch_1_1_test_case_info_a5f37291295e3a6de2dd85324c941edaf} 
+bool {\bfseries ok\+To\+Fail} () const
+\item 
+\Hypertarget{struct_catch_1_1_test_case_info_abe33d81233230cdae8afa714688e905b}\label{struct_catch_1_1_test_case_info_abe33d81233230cdae8afa714688e905b} 
+bool {\bfseries expected\+To\+Fail} () const
+\item 
+\Hypertarget{struct_catch_1_1_test_case_info_a17506de67fb18e27511c17f8a81119d8}\label{struct_catch_1_1_test_case_info_a17506de67fb18e27511c17f8a81119d8} 
+std\+::string {\bfseries tags\+As\+String} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{struct_catch_1_1_test_case_info_a463794e2f5cfead307c93efd134ade36}{name}}
+\item 
+std\+::string \mbox{\hyperlink{struct_catch_1_1_test_case_info_a1a5e0825132a38d091defdebbf2f8ce9}{class\+Name}}
+\item 
+std\+::string \mbox{\hyperlink{struct_catch_1_1_test_case_info_a37fe2db9425bc45f6a33893eac31198e}{description}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{struct_catch_1_1_test_case_info_a150a7cbca1dd0c91799ccb14ff822eb0}{tags}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{struct_catch_1_1_test_case_info_a844e3de9baf6e53cadfba9733c236bfe}{lcase\+Tags}}
+\item 
+\mbox{\hyperlink{struct_catch_1_1_source_line_info}{Source\+Line\+Info}} \mbox{\hyperlink{struct_catch_1_1_test_case_info_aa9407b7f442655b51a2aad24b3fa2fd3}{line\+Info}}
+\item 
+Special\+Properties \mbox{\hyperlink{struct_catch_1_1_test_case_info_afc1e84bd7a2e180895a06d9131302af0}{properties}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_catch_1_1_test_case_info_a0fe44abaf18ae7c26f98a9fc2b08679c}\label{struct_catch_1_1_test_case_info_a0fe44abaf18ae7c26f98a9fc2b08679c} 
+void {\bfseries set\+Tags} (\mbox{\hyperlink{struct_catch_1_1_test_case_info}{Test\+Case\+Info}} \&test\+Case\+Info, std\+::vector$<$ std\+::string $>$ tags)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{catch_8hpp_source_l04772}{4772}} of file \mbox{\hyperlink{catch_8hpp_source}{catch.\+hpp}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{struct_catch_1_1_test_case_info_a39b232f74b4a7a6f2183b96759027eac}\index{Catch::TestCaseInfo@{Catch::TestCaseInfo}!SpecialProperties@{SpecialProperties}}
+\index{SpecialProperties@{SpecialProperties}!Catch::TestCaseInfo@{Catch::TestCaseInfo}}
+\doxysubsubsection{\texorpdfstring{SpecialProperties}{SpecialProperties}}
+{\footnotesize\ttfamily \label{struct_catch_1_1_test_case_info_a39b232f74b4a7a6f2183b96759027eac} 
+enum Catch\+::\+Test\+Case\+Info\+::\+Special\+Properties}
+
+
+
+Definition at line \mbox{\hyperlink{catch_8hpp_source_l04773}{4773}} of file \mbox{\hyperlink{catch_8hpp_source}{catch.\+hpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_catch_1_1_test_case_info_a1a5e0825132a38d091defdebbf2f8ce9}\index{Catch::TestCaseInfo@{Catch::TestCaseInfo}!className@{className}}
+\index{className@{className}!Catch::TestCaseInfo@{Catch::TestCaseInfo}}
+\doxysubsubsection{\texorpdfstring{className}{className}}
+{\footnotesize\ttfamily \label{struct_catch_1_1_test_case_info_a1a5e0825132a38d091defdebbf2f8ce9} 
+std\+::string Catch\+::\+Test\+Case\+Info\+::class\+Name}
+
+
+
+Definition at line \mbox{\hyperlink{catch_8hpp_source_l04799}{4799}} of file \mbox{\hyperlink{catch_8hpp_source}{catch.\+hpp}}.
+
+\Hypertarget{struct_catch_1_1_test_case_info_a37fe2db9425bc45f6a33893eac31198e}\index{Catch::TestCaseInfo@{Catch::TestCaseInfo}!description@{description}}
+\index{description@{description}!Catch::TestCaseInfo@{Catch::TestCaseInfo}}
+\doxysubsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily \label{struct_catch_1_1_test_case_info_a37fe2db9425bc45f6a33893eac31198e} 
+std\+::string Catch\+::\+Test\+Case\+Info\+::description}
+
+
+
+Definition at line \mbox{\hyperlink{catch_8hpp_source_l04800}{4800}} of file \mbox{\hyperlink{catch_8hpp_source}{catch.\+hpp}}.
+
+\Hypertarget{struct_catch_1_1_test_case_info_a844e3de9baf6e53cadfba9733c236bfe}\index{Catch::TestCaseInfo@{Catch::TestCaseInfo}!lcaseTags@{lcaseTags}}
+\index{lcaseTags@{lcaseTags}!Catch::TestCaseInfo@{Catch::TestCaseInfo}}
+\doxysubsubsection{\texorpdfstring{lcaseTags}{lcaseTags}}
+{\footnotesize\ttfamily \label{struct_catch_1_1_test_case_info_a844e3de9baf6e53cadfba9733c236bfe} 
+std\+::vector$<$std\+::string$>$ Catch\+::\+Test\+Case\+Info\+::lcase\+Tags}
+
+
+
+Definition at line \mbox{\hyperlink{catch_8hpp_source_l04802}{4802}} of file \mbox{\hyperlink{catch_8hpp_source}{catch.\+hpp}}.
+
+\Hypertarget{struct_catch_1_1_test_case_info_aa9407b7f442655b51a2aad24b3fa2fd3}\index{Catch::TestCaseInfo@{Catch::TestCaseInfo}!lineInfo@{lineInfo}}
+\index{lineInfo@{lineInfo}!Catch::TestCaseInfo@{Catch::TestCaseInfo}}
+\doxysubsubsection{\texorpdfstring{lineInfo}{lineInfo}}
+{\footnotesize\ttfamily \label{struct_catch_1_1_test_case_info_aa9407b7f442655b51a2aad24b3fa2fd3} 
+\mbox{\hyperlink{struct_catch_1_1_source_line_info}{Source\+Line\+Info}} Catch\+::\+Test\+Case\+Info\+::line\+Info}
+
+
+
+Definition at line \mbox{\hyperlink{catch_8hpp_source_l04803}{4803}} of file \mbox{\hyperlink{catch_8hpp_source}{catch.\+hpp}}.
+
+\Hypertarget{struct_catch_1_1_test_case_info_a463794e2f5cfead307c93efd134ade36}\index{Catch::TestCaseInfo@{Catch::TestCaseInfo}!name@{name}}
+\index{name@{name}!Catch::TestCaseInfo@{Catch::TestCaseInfo}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{struct_catch_1_1_test_case_info_a463794e2f5cfead307c93efd134ade36} 
+std\+::string Catch\+::\+Test\+Case\+Info\+::name}
+
+
+
+Definition at line \mbox{\hyperlink{catch_8hpp_source_l04798}{4798}} of file \mbox{\hyperlink{catch_8hpp_source}{catch.\+hpp}}.
+
+\Hypertarget{struct_catch_1_1_test_case_info_afc1e84bd7a2e180895a06d9131302af0}\index{Catch::TestCaseInfo@{Catch::TestCaseInfo}!properties@{properties}}
+\index{properties@{properties}!Catch::TestCaseInfo@{Catch::TestCaseInfo}}
+\doxysubsubsection{\texorpdfstring{properties}{properties}}
+{\footnotesize\ttfamily \label{struct_catch_1_1_test_case_info_afc1e84bd7a2e180895a06d9131302af0} 
+Special\+Properties Catch\+::\+Test\+Case\+Info\+::properties}
+
+
+
+Definition at line \mbox{\hyperlink{catch_8hpp_source_l04804}{4804}} of file \mbox{\hyperlink{catch_8hpp_source}{catch.\+hpp}}.
+
+\Hypertarget{struct_catch_1_1_test_case_info_a150a7cbca1dd0c91799ccb14ff822eb0}\index{Catch::TestCaseInfo@{Catch::TestCaseInfo}!tags@{tags}}
+\index{tags@{tags}!Catch::TestCaseInfo@{Catch::TestCaseInfo}}
+\doxysubsubsection{\texorpdfstring{tags}{tags}}
+{\footnotesize\ttfamily \label{struct_catch_1_1_test_case_info_a150a7cbca1dd0c91799ccb14ff822eb0} 
+std\+::vector$<$std\+::string$>$ Catch\+::\+Test\+Case\+Info\+::tags}
+
+
+
+Definition at line \mbox{\hyperlink{catch_8hpp_source_l04801}{4801}} of file \mbox{\hyperlink{catch_8hpp_source}{catch.\+hpp}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/stanislav/\+Github/\+Machine\+Learning/\+ML-\/\+Perceptron/src/test/catch.\+hpp\end{DoxyCompactItemize}

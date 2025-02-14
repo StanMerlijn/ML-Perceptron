@@ -1,0 +1,439 @@
+PWD /Users/stanislav/Github/MachineLearning/ML-Perceptron/docs/latex
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt
+INPUT /Users/stanislav/Github/MachineLearning/ML-Perceptron/docs/latex/refman.tex
+OUTPUT refman.log
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/book.cls
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/book.cls
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/bk10.clo
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/bk10.clo
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/bk10.clo
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/array.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/array.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/array-2016-10-06.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT ./doxygen.sty
+INPUT doxygen.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/alltt.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/alltt.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/calc.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/calc.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/verbatim.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/verbatim.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdftex.def
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdftex.def
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdftex.def
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/colortbl/colortbl.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/colortbl/colortbl.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/color.sty
+INPUT ./longtable_doxygen.sty
+INPUT longtable_doxygen.sty
+INPUT ./tabu_doxygen.sty
+INPUT tabu_doxygen.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/varwidth/varwidth.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/varwidth/varwidth.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/tabularx.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/tabularx.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/multicol.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/multicol.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/multirow/multirow.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/multirow/multirow.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hanging/hanging.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hanging/hanging.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifpdf.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifpdf.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/adjustbox/adjustbox.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/adjustbox/adjustbox.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xkeyval/xkeyval.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xkeyval/xkeyval.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/xkeyval/xkeyval.tex
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/xkeyval/xkvutils.tex
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/adjustbox/adjcalc.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/adjustbox/adjcalc.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/adjustbox/trimclip.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/adjustbox/trimclip.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/collectbox/collectbox.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/collectbox/collectbox.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/adjustbox/tc-pdftex.def
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/adjustbox/tc-pdftex.def
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/adjustbox/tc-pdftex.def
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ifoddpage/ifoddpage.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ifoddpage/ifoddpage.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ifoddpage/ifoddpage.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amssymb.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amssymb.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/stackengine/stackengine.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/stackengine/stackengine.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listofitems/listofitems.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listofitems/listofitems.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/listofitems/listofitems.tex
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/enumitem/enumitem.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/enumitem/enumitem.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/alphalph/alphalph.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/alphalph/alphalph.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intcalc/intcalc.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intcalc/intcalc.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ulem/ulem.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ulem/ulem.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/latex-fonts/lasy6.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/inputenc.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/inputenc.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/makeidx.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/makeidx.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/textcomp.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/textcomp.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/wasysym/wasysym.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/wasysym/wasysym.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifxetex.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifxetex.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fontenc.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fontenc.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ecrm1000.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/helvet.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/helvet.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/courier.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/courier.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifvtex.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifvtex.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.cfg
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.cfg
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.cfg
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/changepage/changepage.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/changepage/changepage.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/natbib/natbib.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/natbib/natbib.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tocloft/tocloft.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tocloft/tocloft.sty
+OUTPUT refman.idx
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newunicodechar/newunicodechar.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newunicodechar/newunicodechar.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvsetkeys/kvsetkeys.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvsetkeys/kvsetkeys.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor/hycolor.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor/hycolor.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/nameref.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/nameref.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/stringenc/stringenc.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/stringenc/stringenc.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/pd1enc.def
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/pd1enc.def
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/pd1enc.def
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/puenc.def
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/puenc.def
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/puenc.def
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/backref.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/backref.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/atveryend/atveryend.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atveryend-ltx.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atveryend-ltx.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitset/bitset.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitset/bitset.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/generic/atbegshi/atbegshi.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atbegshi-ltx.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/atbegshi-ltx.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hpdftex.def
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hpdftex.def
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hpdftex.def
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption3.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption3.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/ltcaption.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/ltcaption.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoc/etoc.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoc/etoc.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1phv.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1phv.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1phv.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT ./refman.aux
+INPUT ./refman.aux
+INPUT refman.aux
+OUTPUT refman.aux
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+INPUT ./refman.out
+INPUT ./refman.out
+INPUT refman.out
+INPUT refman.out
+OUTPUT refman.pdf
+INPUT ./refman.out
+INPUT ./refman.out
+OUTPUT refman.out
+INPUT ./refman.toc
+INPUT ./refman.toc
+INPUT refman.toc
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsb.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsb.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsb.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/wasysym/uwasy.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/wasysym/uwasy.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/wasysym/uwasy.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/wasy/wasy7.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/wasy/wasy5.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
+OUTPUT refman.toc
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/wasy/wasy10.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvr8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT ./index.tex
+INPUT ./index.tex
+INPUT ./index.tex
+INPUT ./index.tex
+INPUT index.tex
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1pcr.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1pcr.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1pcr.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/courier/pcrr8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8r.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/courier/pcrr8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8r.tfm
+INPUT ./annotated.tex
+INPUT ./annotated.tex
+INPUT ./annotated.tex
+INPUT ./annotated.tex
+INPUT annotated.tex
+INPUT ./files.tex
+INPUT ./files.tex
+INPUT ./files.tex
+INPUT ./files.tex
+INPUT files.tex
+INPUT ./classhalf_adder.tex
+INPUT ./classhalf_adder.tex
+INPUT ./classhalf_adder.tex
+INPUT ./classhalf_adder.tex
+INPUT classhalf_adder.tex
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1phv.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1phv.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1phv.fd
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8c.tfm
+INPUT ./structhalf_adder_output.tex
+INPUT ./structhalf_adder_output.tex
+INPUT ./structhalf_adder_output.tex
+INPUT ./structhalf_adder_output.tex
+INPUT structhalf_adder_output.tex
+INPUT ./class_perceptron.tex
+INPUT ./class_perceptron.tex
+INPUT ./class_perceptron.tex
+INPUT ./class_perceptron.tex
+INPUT class_perceptron.tex
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvr8c.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr8.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr6.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/wasy/wasy8.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/wasy/wasy6.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrro8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrro8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8t.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8tn.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8r.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/courier/pcrr8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrr8r.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/courier/pcrro8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/courier/pcrro8r.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvb8tn.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvb8rn.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8r.tfm
+INPUT ./class_perceptron_layer.tex
+INPUT ./class_perceptron_layer.tex
+INPUT ./class_perceptron_layer.tex
+INPUT ./class_perceptron_layer.tex
+INPUT class_perceptron_layer.tex
+INPUT ./class_perceptron_network.tex
+INPUT ./class_perceptron_network.tex
+INPUT ./class_perceptron_network.tex
+INPUT ./class_perceptron_network.tex
+INPUT class_perceptron_network.tex
+INPUT ./half_adder_8hpp_source.tex
+INPUT ./half_adder_8hpp_source.tex
+INPUT ./half_adder_8hpp_source.tex
+INPUT ./half_adder_8hpp_source.tex
+INPUT half_adder_8hpp_source.tex
+INPUT ./perceptron_8hpp.tex
+INPUT ./perceptron_8hpp.tex
+INPUT ./perceptron_8hpp.tex
+INPUT ./perceptron_8hpp.tex
+INPUT perceptron_8hpp.tex
+INPUT ./perceptron_8hpp_source.tex
+INPUT ./perceptron_8hpp_source.tex
+INPUT ./perceptron_8hpp_source.tex
+INPUT ./perceptron_8hpp_source.tex
+INPUT perceptron_8hpp_source.tex
+INPUT ./perceptron_layer_8hpp.tex
+INPUT ./perceptron_layer_8hpp.tex
+INPUT ./perceptron_layer_8hpp.tex
+INPUT ./perceptron_layer_8hpp.tex
+INPUT perceptron_layer_8hpp.tex
+INPUT ./perceptron_layer_8hpp_source.tex
+INPUT ./perceptron_layer_8hpp_source.tex
+INPUT ./perceptron_layer_8hpp_source.tex
+INPUT ./perceptron_layer_8hpp_source.tex
+INPUT perceptron_layer_8hpp_source.tex
+INPUT ./perceptron_network_8hpp.tex
+INPUT ./perceptron_network_8hpp.tex
+INPUT ./perceptron_network_8hpp.tex
+INPUT ./perceptron_network_8hpp.tex
+INPUT perceptron_network_8hpp.tex
+INPUT ./perceptron_network_8hpp_source.tex
+INPUT ./perceptron_network_8hpp_source.tex
+INPUT ./perceptron_network_8hpp_source.tex
+INPUT ./perceptron_network_8hpp_source.tex
+INPUT perceptron_network_8hpp_source.tex
+INPUT ./test_8cpp.tex
+INPUT ./test_8cpp.tex
+INPUT ./test_8cpp.tex
+INPUT ./test_8cpp.tex
+INPUT test_8cpp.tex
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvro8c.tfm
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/helvetic/phvro8c.vf
+INPUT ./refman.ind
+INPUT ./refman.ind
+INPUT refman.ind
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT refman.aux
+INPUT ./refman.out
+INPUT ./refman.out
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrro8a.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrro8a.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvb8a.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvb8a.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvb8ac.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvb8ac.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvro8a.pfb
+INPUT /Users/stanislav/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/helvetic/uhvro8a.pfb

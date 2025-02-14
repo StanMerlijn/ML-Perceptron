@@ -1,0 +1,99 @@
+\doxysection{Perceptron\+Network Class Reference}
+\hypertarget{class_perceptron_network}{}\label{class_perceptron_network}\index{PerceptronNetwork@{PerceptronNetwork}}
+
+
+Represents a multi-\/layer perceptron network.  
+
+
+
+
+{\ttfamily \#include $<$perceptron\+Network.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_perceptron_network_a64d694eeebe95c98ab0b42dc83147e10}{Perceptron\+Network}} (std\+::vector$<$ \mbox{\hyperlink{class_perceptron_layer}{Perceptron\+Layer}} $>$ layers)
+\begin{DoxyCompactList}\small\item\em Constructs a perceptron network. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_perceptron_network_a150c749e4fc8a39d6d81693e2d3a9fbe}{feed\+Forward}} (const std\+::vector$<$ int $>$ \&input) const
+\begin{DoxyCompactList}\small\item\em Feeds input forward through the network. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_perceptron_network_a5fa17a8b1fb9a227da2795914c7236d9}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (int verbose) const
+\begin{DoxyCompactList}\small\item\em Prints network details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a multi-\/layer perceptron network. 
+
+Definition at line \mbox{\hyperlink{perceptron_network_8hpp_source_l00020}{20}} of file \mbox{\hyperlink{perceptron_network_8hpp_source}{perceptron\+Network.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_perceptron_network_a64d694eeebe95c98ab0b42dc83147e10}\index{PerceptronNetwork@{PerceptronNetwork}!PerceptronNetwork@{PerceptronNetwork}}
+\index{PerceptronNetwork@{PerceptronNetwork}!PerceptronNetwork@{PerceptronNetwork}}
+\doxysubsubsection{\texorpdfstring{PerceptronNetwork()}{PerceptronNetwork()}}
+{\footnotesize\ttfamily \label{class_perceptron_network_a64d694eeebe95c98ab0b42dc83147e10} 
+Perceptron\+Network\+::\+Perceptron\+Network (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_perceptron_layer}{Perceptron\+Layer}} $>$}]{layers}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a perceptron network. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em layers} & List of perceptron layers. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{perceptron_network_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{perceptron_network_8cpp_source}{perceptron\+Network.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_perceptron_network_a5fa17a8b1fb9a227da2795914c7236d9}\index{PerceptronNetwork@{PerceptronNetwork}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!PerceptronNetwork@{PerceptronNetwork}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{class_perceptron_network_a5fa17a8b1fb9a227da2795914c7236d9} 
+void Perceptron\+Network\+::\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{int}]{verbose}{}\end{DoxyParamCaption}) const}
+
+
+
+Prints network details. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em verbose} & Verbosity level. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{perceptron_network_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{perceptron_network_8cpp_source}{perceptron\+Network.\+cpp}}.
+
+\Hypertarget{class_perceptron_network_a150c749e4fc8a39d6d81693e2d3a9fbe}\index{PerceptronNetwork@{PerceptronNetwork}!feedForward@{feedForward}}
+\index{feedForward@{feedForward}!PerceptronNetwork@{PerceptronNetwork}}
+\doxysubsubsection{\texorpdfstring{feedForward()}{feedForward()}}
+{\footnotesize\ttfamily \label{class_perceptron_network_a150c749e4fc8a39d6d81693e2d3a9fbe} 
+std\+::vector$<$ int $>$ Perceptron\+Network\+::feed\+Forward (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{input}{}\end{DoxyParamCaption}) const}
+
+
+
+Feeds input forward through the network. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Input vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Output vector after processing through all layers. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{perceptron_network_8cpp_source_l00018}{18}} of file \mbox{\hyperlink{perceptron_network_8cpp_source}{perceptron\+Network.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/stanislav/\+Github/\+Machine\+Learning/\+ML-\/\+Perceptron/src/header/\mbox{\hyperlink{perceptron_network_8hpp}{perceptron\+Network.\+hpp}}\item 
+/\+Users/stanislav/\+Github/\+Machine\+Learning/\+ML-\/\+Perceptron/src/\mbox{\hyperlink{perceptron_network_8cpp}{perceptron\+Network.\+cpp}}\end{DoxyCompactItemize}

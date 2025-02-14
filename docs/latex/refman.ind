@@ -1,0 +1,60 @@
+\begin{theindex}
+
+  \item {/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/header/halfAdder.hpp}, 
+		\hyperpage{13}
+  \item {/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/header/perceptron.hpp}, 
+		\hyperpage{14}
+  \item {/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/header/perceptronLayer.hpp}, 
+		\hyperpage{15}
+  \item {/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/header/perceptronNetwork.hpp}, 
+		\hyperpage{16}
+  \item {/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/test/test.cpp}, 
+		\hyperpage{17}
+  \item {\_\_str\_\_}
+    \subitem {Perceptron}, \hyperpage{8}
+    \subitem {PerceptronLayer}, \hyperpage{10}
+    \subitem {PerceptronNetwork}, \hyperpage{11}
+
+  \indexspace
+
+  \item {feedForward}
+    \subitem {PerceptronLayer}, \hyperpage{10}
+    \subitem {PerceptronNetwork}, \hyperpage{11}
+
+  \indexspace
+
+  \item {halfAdder}, \hyperpage{7}
+  \item {halfAdderOutput}, \hyperpage{7}
+
+  \indexspace
+
+  \item {ML-\/perceptron}, \hyperpage{1}
+
+  \indexspace
+
+  \item {Perceptron}, \hyperpage{7}
+    \subitem {\_\_str\_\_}, \hyperpage{8}
+    \subitem {Perceptron}, \hyperpage{8}
+    \subitem {predict}, \hyperpage{8}
+    \subitem {train}, \hyperpage{9}
+  \item {PerceptronLayer}, \hyperpage{9}
+    \subitem {\_\_str\_\_}, \hyperpage{10}
+    \subitem {feedForward}, \hyperpage{10}
+    \subitem {PerceptronLayer}, \hyperpage{9}
+  \item {PerceptronNetwork}, \hyperpage{10}
+    \subitem {\_\_str\_\_}, \hyperpage{11}
+    \subitem {feedForward}, \hyperpage{11}
+    \subitem {PerceptronNetwork}, \hyperpage{11}
+  \item {predict}
+    \subitem {Perceptron}, \hyperpage{8}
+
+  \indexspace
+
+  \item {test.cpp}
+    \subitem {TEST\_CASE}, \hyperpage{18}
+  \item {TEST\_CASE}
+    \subitem {test.cpp}, \hyperpage{18}
+  \item {train}
+    \subitem {Perceptron}, \hyperpage{9}
+
+\end{theindex}

@@ -1,0 +1,28 @@
+\doxysection{perceptron.\+hpp}
+\hypertarget{perceptron_8hpp_source}{}\label{perceptron_8hpp_source}\index{/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/header/perceptron.hpp@{/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/header/perceptron.hpp}}
+\mbox{\hyperlink{perceptron_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00020}\mbox{\hyperlink{class_perceptron}{00020}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_perceptron_a5291f385a6169ebc70a003a4dccd226f}{Perceptron}}\ }
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00021}00021\ \{\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00022}00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00029}00029\ \ \ \ \ \mbox{\hyperlink{class_perceptron_a5291f385a6169ebc70a003a4dccd226f}{Perceptron}}(std::vector<double>\ weights,\ \textcolor{keywordtype}{double}\ bias,\ \textcolor{keywordtype}{double}\ learningRate);}
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00036}00036\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_perceptron_a7f895fb538e24722e305d1dc1717a989}{predict}}(\textcolor{keyword}{const}\ std::vector<int>\&\ inputs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00044}00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}}(\textcolor{keyword}{const}\ std::vector<std::vector<int>>\&\ inputs,\ \textcolor{keyword}{const}\ std::vector<int>\&\ targets,\ \textcolor{keywordtype}{int}\ epochs);}
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00050}00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_perceptron_aded865cff86e00ce42a97125bb66b5ae}{\_\_str\_\_}}(\textcolor{keywordtype}{int}\ verbose)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00052}00052\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00053}00053\ \ \ \ \ \ \ \ \ std::vector<double>\ weights;\ }
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ bias;\ }
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ learningRate;\ \ }
+\DoxyCodeLine{\Hypertarget{perceptron_8hpp_source_l00056}00056\ \};}
+
+\end{DoxyCode}

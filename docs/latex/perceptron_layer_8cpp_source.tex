@@ -1,0 +1,30 @@
+\doxysection{perceptron\+Layer.\+cpp}
+\hypertarget{perceptron_layer_8cpp_source}{}\label{perceptron_layer_8cpp_source}\index{/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/perceptronLayer.cpp@{/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/perceptronLayer.cpp}}
+\mbox{\hyperlink{perceptron_layer_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{perceptron_layer_8hpp}{header/perceptronLayer.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00013}\mbox{\hyperlink{class_perceptron_layer_a216eb59e0fd85f81a67f0d0a05495645}{00013}}\ \mbox{\hyperlink{class_perceptron_layer_a216eb59e0fd85f81a67f0d0a05495645}{PerceptronLayer::PerceptronLayer}}(\textcolor{keyword}{const}\ std::vector<Perceptron>\&\ neurons)\ }
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00014}00014\ \ \ \ \ :\ neurons(neurons)\ \{\}}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00016}\mbox{\hyperlink{class_perceptron_layer_ae7fbc7a864fc6e12d0ca1548e00877a9}{00016}}\ std::vector<int>\ \mbox{\hyperlink{class_perceptron_layer_ae7fbc7a864fc6e12d0ca1548e00877a9}{PerceptronLayer::feedForward}}(\textcolor{keyword}{const}\ std::vector<int>\&\ input)\textcolor{keyword}{\ const\ }}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00017}00017\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00018}00018\ \ \ \ \ \textcolor{comment}{//\ Predict\ the\ output\ for\ each\ perceptron\ }}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00019}00019\ \ \ \ \ std::vector<int>\ outputs;}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00020}00020\ \ \ \ \ \textcolor{comment}{//\ Propagate\ the\ input\ through\ each\ layer\ sequentially.\ Also\ called\ feedforward.}}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00021}00021\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \mbox{\hyperlink{class_perceptron}{Perceptron}}\&\ neuron\ :\ neurons)\ \{}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00022}00022\ \ \ \ \ \ \ \ \ outputs.push\_back(neuron.predict(input));}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00023}00023\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00024}00024\ \ \ \ \ \textcolor{keywordflow}{return}\ outputs;}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00025}00025\ \}}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00027}\mbox{\hyperlink{class_perceptron_layer_aa3368bca667b3a6a72b1d36246a9fd36}{00027}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_perceptron_layer_aa3368bca667b3a6a72b1d36246a9fd36}{PerceptronLayer::\_\_str\_\_}}(\textcolor{keywordtype}{int}\ verbose)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00028}00028\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00029}00029\ \ \ \ \ \textcolor{comment}{//\ For\ each\ neuron\ in\ the\ layer\ print\ the\ data}}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \mbox{\hyperlink{class_perceptron}{Perceptron}}\&\ neuron\ :\ neurons)\ \{}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ neuron.\_\_str\_\_(verbose);}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00032}00032\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{perceptron_layer_8cpp_source_l00033}00033\ \}}
+
+\end{DoxyCode}

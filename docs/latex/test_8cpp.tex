@@ -1,0 +1,241 @@
+\doxysection{/\+Users/stanislav/\+Github/\+Machine\+Learning/\+ML-\/\+Perceptron/src/test/test.cpp File Reference}
+\hypertarget{test_8cpp}{}\label{test_8cpp}\index{/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/test/test.cpp@{/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/test/test.cpp}}
+
+
+In this file the test cases for the \doxylink{class_perceptron}{Perceptron}, \doxylink{class_perceptron_layer}{Perceptron\+Layer} and \doxylink{class_perceptron_network}{Perceptron\+Network} classes are defined.  
+
+
+{\ttfamily \#include "{}catch.\+hpp"{}}\newline
+{\ttfamily \#include "{}../header/perceptron.\+hpp"{}}\newline
+{\ttfamily \#include "{}../header/perceptron\+Layer.\+hpp"{}}\newline
+{\ttfamily \#include "{}../header/perceptron\+Network.\+hpp"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for test.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{test_8cpp_a656eb5868e824d59f489f910db438420}{CATCH\+\_\+\+CONFIG\+\_\+\+MAIN}}
+\item 
+\#define \mbox{\hyperlink{test_8cpp_ad455e60ecb4b0eba516ee2dd166bba1d}{EPOCHS}}~100
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}{TEST\+\_\+\+CASE}} ("{}Perceptron for INVERT Gate"{}, "{}\mbox{[}perceptron\mbox{]}"{})
+\begin{DoxyCompactList}\small\item\em \doxylink{class_perceptron}{Perceptron} for INVERT Gate\+: Tests the perceptron\textquotesingle{}s ability to learn the INVERT gate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{test_8cpp_a78cea35aff05eba43ee086a2fdb3433d}{TEST\+\_\+\+CASE}} ("{}Perceptron for AND Gate"{}, "{}\mbox{[}perceptron\mbox{]}"{})
+\begin{DoxyCompactList}\small\item\em \doxylink{class_perceptron}{Perceptron} for AND Gate\+: Tests the perceptron\textquotesingle{}s ability to learn the AND gate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{test_8cpp_aef6604b65f7d80722bff589135697684}{TEST\+\_\+\+CASE}} ("{}Perceptron for OR Gate"{}, "{}\mbox{[}perceptron\mbox{]}"{})
+\begin{DoxyCompactList}\small\item\em \doxylink{class_perceptron}{Perceptron} for OR Gate\+: Tests the perceptron\textquotesingle{}s ability to learn the OR gate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{test_8cpp_ae444934a922059548542ef6a13515e35}{TEST\+\_\+\+CASE}} ("{}Perceptron for NOR Gate (3 inputs)"{}, "{}\mbox{[}perceptron\mbox{]}"{})
+\begin{DoxyCompactList}\small\item\em \doxylink{class_perceptron}{Perceptron} for NOR Gate (3 inputs)\+: Tests the perceptron\textquotesingle{}s ability to learn the NOR gate with 3 inputs. The NOR gate is a digital logic gate that implements logical NOR\end{DoxyCompactList}\item 
+\mbox{\hyperlink{test_8cpp_aeea69aa551afe50a8e3b05f3be47fe0f}{TEST\+\_\+\+CASE}} ("{}Perceptron for 3-\/input Majority Gate"{}, "{}\mbox{[}perceptron\mbox{]}"{})
+\begin{DoxyCompactList}\small\item\em \doxylink{class_perceptron}{Perceptron} for 3-\/input Majority Gate\+: Tests the perceptron\textquotesingle{}s ability to learn the 3-\/input Majority gate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{test_8cpp_a279af21e3f8ff92c00abefba3ea0ec7f}{TEST\+\_\+\+CASE}} ("{}Perceptron\+Layer for AND and OR Gates"{}, "{}\mbox{[}perceptron\+Layer\mbox{]}"{})
+\begin{DoxyCompactList}\small\item\em \doxylink{class_perceptron_layer}{Perceptron\+Layer} for AND and OR Gates\+: Tests the \doxylink{class_perceptron_layer}{Perceptron\+Layer}\textquotesingle{}s ability to learn the AND and OR gates. It contains two perceptrons\+: one for the AND gate and one for the OR gate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{test_8cpp_afcae0369c0995b94919b7558505a86ed}{TEST\+\_\+\+CASE}} ("{}Perceptron\+Network for the XOR gate with 2 inputs"{}, "{}\mbox{[}perceptron\+Network\mbox{]}"{})
+\begin{DoxyCompactList}\small\item\em \doxylink{class_perceptron_network}{Perceptron\+Network} for the XOR gate with 2 inputs. This network contains two layers\+: input\+Layer for the AND gate and one for the OR gate. output\+Layer for the AND gate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{test_8cpp_a142a067880136ba5652cf69463566ba4}{TEST\+\_\+\+CASE}} ("{}Perceptron\+Network for half adder"{}, "{}\mbox{[}perceptron\+Network\mbox{]}"{})
+\begin{DoxyCompactList}\small\item\em \doxylink{class_perceptron_network}{Perceptron\+Network} for a half adder. This network contains two layers\+: hidden\+Layer for the OR and AND gates. output\+Layer for the XOR gate(sum) and the carry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{test_8cpp_a991a65545bbfbce2a5594f061db46973}{inputs}} = \{\{0, 0\}, \{0, 1\}, \{1, 0\}, \{1, 1\}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+In this file the test cases for the \doxylink{class_perceptron}{Perceptron}, \doxylink{class_perceptron_layer}{Perceptron\+Layer} and \doxylink{class_perceptron_network}{Perceptron\+Network} classes are defined. 
+
+Unit tests for the \doxylink{class_perceptron}{Perceptron}, \doxylink{class_perceptron_layer}{Perceptron\+Layer} and \doxylink{class_perceptron_network}{Perceptron\+Network} classes.
+
+\begin{DoxyAuthor}{Author}
+Stan Merlijn 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2025-\/02-\/12
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2025
+\end{DoxyCopyright}
+This file contains a series of test cases to verify the functionality of the \doxylink{class_perceptron}{Perceptron} and \doxylink{class_perceptron_layer}{Perceptron\+Layer} classes. The tests include training and prediction for various logic gates.
+
+Test Cases\+:
+\begin{DoxyItemize}
+\item \doxylink{class_perceptron}{Perceptron} for INVERT Gate\+: Tests the perceptron\textquotesingle{}s ability to learn the INVERT gate.
+\item \doxylink{class_perceptron}{Perceptron} for AND Gate\+: Tests the perceptron\textquotesingle{}s ability to learn the AND gate.
+\item \doxylink{class_perceptron}{Perceptron} for OR Gate\+: Tests the perceptron\textquotesingle{}s ability to learn the OR gate.
+\item \doxylink{class_perceptron}{Perceptron} for NOR Gate (3 inputs)\+: Tests the perceptron\textquotesingle{}s ability to learn the NOR gate with 3 inputs.
+\item \doxylink{class_perceptron}{Perceptron} for 3-\/input Majority Gate\+: Tests the perceptron\textquotesingle{}s ability to learn the 3-\/input Majority gate.
+\item \doxylink{class_perceptron_layer}{Perceptron\+Layer} for AND and OR Gates\+: Tests the \doxylink{class_perceptron_layer}{Perceptron\+Layer}\textquotesingle{}s ability to learn the AND and OR gates.
+\item \doxylink{class_perceptron_network}{Perceptron\+Network} for the XOR gate with 2 inputs.
+\item \doxylink{class_perceptron_network}{Perceptron\+Network} for a half adder.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+The tests use the Catch2 framework for unit testing. 
+\end{DoxyNote}
+
+
+Definition in file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{test_8cpp_a656eb5868e824d59f489f910db438420}\index{test.cpp@{test.cpp}!CATCH\_CONFIG\_MAIN@{CATCH\_CONFIG\_MAIN}}
+\index{CATCH\_CONFIG\_MAIN@{CATCH\_CONFIG\_MAIN}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{CATCH\_CONFIG\_MAIN}{CATCH\_CONFIG\_MAIN}}
+{\footnotesize\ttfamily \label{test_8cpp_a656eb5868e824d59f489f910db438420} 
+\#define CATCH\+\_\+\+CONFIG\+\_\+\+MAIN}
+
+
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+\Hypertarget{test_8cpp_ad455e60ecb4b0eba516ee2dd166bba1d}\index{test.cpp@{test.cpp}!EPOCHS@{EPOCHS}}
+\index{EPOCHS@{EPOCHS}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{EPOCHS}{EPOCHS}}
+{\footnotesize\ttfamily \label{test_8cpp_ad455e60ecb4b0eba516ee2dd166bba1d} 
+\#define EPOCHS~100}
+
+
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{test_8cpp_aeea69aa551afe50a8e3b05f3be47fe0f}\index{test.cpp@{test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily \label{test_8cpp_aeea69aa551afe50a8e3b05f3be47fe0f} 
+TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Perceptron for 3-\/input Majority Gate"{}}]{}{, }\item[{"{}"{}}]{}{\mbox{[}perceptron\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_perceptron}{Perceptron} for 3-\/input Majority Gate\+: Tests the perceptron\textquotesingle{}s ability to learn the 3-\/input Majority gate. 
+
+
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00124}{124}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+\Hypertarget{test_8cpp_a78cea35aff05eba43ee086a2fdb3433d}\index{test.cpp@{test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily \label{test_8cpp_a78cea35aff05eba43ee086a2fdb3433d} 
+TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Perceptron for AND Gate"{}}]{}{, }\item[{"{}"{}}]{}{\mbox{[}perceptron\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_perceptron}{Perceptron} for AND Gate\+: Tests the perceptron\textquotesingle{}s ability to learn the AND gate. 
+
+
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00066}{66}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+\Hypertarget{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8}\index{test.cpp@{test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily \label{test_8cpp_a2922432c72ea6b8d825d5cb8c2fd13c8} 
+TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Perceptron for INVERT Gate"{}}]{}{, }\item[{"{}"{}}]{}{\mbox{[}perceptron\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_perceptron}{Perceptron} for INVERT Gate\+: Tests the perceptron\textquotesingle{}s ability to learn the INVERT gate. 
+
+
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00049}{49}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+\Hypertarget{test_8cpp_ae444934a922059548542ef6a13515e35}\index{test.cpp@{test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily \label{test_8cpp_ae444934a922059548542ef6a13515e35} 
+TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Perceptron for NOR Gate (3 inputs)"{}}]{}{, }\item[{"{}"{}}]{}{\mbox{[}perceptron\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_perceptron}{Perceptron} for NOR Gate (3 inputs)\+: Tests the perceptron\textquotesingle{}s ability to learn the NOR gate with 3 inputs. The NOR gate is a digital logic gate that implements logical NOR
+
+0, 0, 0, 0, 0, 0, 0, 1
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00098}{98}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+\Hypertarget{test_8cpp_aef6604b65f7d80722bff589135697684}\index{test.cpp@{test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily \label{test_8cpp_aef6604b65f7d80722bff589135697684} 
+TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Perceptron for OR Gate"{}}]{}{, }\item[{"{}"{}}]{}{\mbox{[}perceptron\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_perceptron}{Perceptron} for OR Gate\+: Tests the perceptron\textquotesingle{}s ability to learn the OR gate. 
+
+
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00081}{81}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+\Hypertarget{test_8cpp_a279af21e3f8ff92c00abefba3ea0ec7f}\index{test.cpp@{test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily \label{test_8cpp_a279af21e3f8ff92c00abefba3ea0ec7f} 
+TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Perceptron\+Layer for AND and OR Gates"{}}]{}{, }\item[{"{}"{}}]{}{\mbox{[}perceptron\+Layer\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_perceptron_layer}{Perceptron\+Layer} for AND and OR Gates\+: Tests the \doxylink{class_perceptron_layer}{Perceptron\+Layer}\textquotesingle{}s ability to learn the AND and OR gates. It contains two perceptrons\+: one for the AND gate and one for the OR gate. 
+
+
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00152}{152}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+\Hypertarget{test_8cpp_a142a067880136ba5652cf69463566ba4}\index{test.cpp@{test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily \label{test_8cpp_a142a067880136ba5652cf69463566ba4} 
+TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Perceptron\+Network for half adder"{}}]{}{, }\item[{"{}"{}}]{}{\mbox{[}perceptron\+Network\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_perceptron_network}{Perceptron\+Network} for a half adder. This network contains two layers\+: hidden\+Layer for the OR and AND gates. output\+Layer for the XOR gate(sum) and the carry. 
+
+
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00216}{216}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+\Hypertarget{test_8cpp_afcae0369c0995b94919b7558505a86ed}\index{test.cpp@{test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily \label{test_8cpp_afcae0369c0995b94919b7558505a86ed} 
+TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Perceptron\+Network for the XOR gate with 2 inputs"{}}]{}{, }\item[{"{}"{}}]{}{\mbox{[}perceptron\+Network\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_perceptron_network}{Perceptron\+Network} for the XOR gate with 2 inputs. This network contains two layers\+: input\+Layer for the AND gate and one for the OR gate. output\+Layer for the AND gate. 
+
+
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00181}{181}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{test_8cpp_a991a65545bbfbce2a5594f061db46973}\index{test.cpp@{test.cpp}!inputs@{inputs}}
+\index{inputs@{inputs}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{inputs}{inputs}}
+{\footnotesize\ttfamily \label{test_8cpp_a991a65545bbfbce2a5594f061db46973} 
+std\+::vector$<$std\+::vector$<$int$>$ $>$ inputs = \{\{0, 0\}, \{0, 1\}, \{1, 0\}, \{1, 1\}\}}
+
+
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00042}{42}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+

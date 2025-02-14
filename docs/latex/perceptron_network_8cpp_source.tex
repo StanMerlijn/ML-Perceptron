@@ -1,0 +1,36 @@
+\doxysection{perceptron\+Network.\+cpp}
+\hypertarget{perceptron_network_8cpp_source}{}\label{perceptron_network_8cpp_source}\index{/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/perceptronNetwork.cpp@{/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/perceptronNetwork.cpp}}
+\mbox{\hyperlink{perceptron_network_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{perceptron_network_8hpp}{header/perceptronNetwork.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{perceptron_layer_8hpp}{header/perceptronLayer.hpp}}"{}}\ }
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00015}\mbox{\hyperlink{class_perceptron_network_a64d694eeebe95c98ab0b42dc83147e10}{00015}}\ \mbox{\hyperlink{class_perceptron_network_a64d694eeebe95c98ab0b42dc83147e10}{PerceptronNetwork::PerceptronNetwork}}(std::vector<PerceptronLayer>\ layers)\ }
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00016}00016\ \ \ \ \ :\ layers(layers)\ \{\}}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00018}\mbox{\hyperlink{class_perceptron_network_a150c749e4fc8a39d6d81693e2d3a9fbe}{00018}}\ std::vector<int>\ \mbox{\hyperlink{class_perceptron_network_a150c749e4fc8a39d6d81693e2d3a9fbe}{PerceptronNetwork::feedForward}}(\textcolor{keyword}{const}\ std::vector<int>\&\ input)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00019}00019\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00020}00020\ \ \ \ \ std::vector<int>\ activation\ =\ input;}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00021}00021\ \ \ \ \ \textcolor{comment}{//\ Propagate\ the\ input\ through\ each\ layer\ sequentially.\ Also\ called\ feedforward.}}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \mbox{\hyperlink{class_perceptron_layer}{PerceptronLayer}}\&\ layer\ :\ layers)\ \{}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00023}00023\ \ \ \ \ \ \ \ \ activation\ =\ layer.feedForward(activation);}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00024}00024\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{keywordflow}{return}\ activation;}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00026}00026\ \}}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00028}\mbox{\hyperlink{class_perceptron_network_a5fa17a8b1fb9a227da2795914c7236d9}{00028}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_perceptron_network_a5fa17a8b1fb9a227da2795914c7236d9}{PerceptronNetwork::\_\_str\_\_}}(\textcolor{keywordtype}{int}\ verbose)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00029}00029\ \textcolor{keyword}{}\{\ \ }
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{comment}{//\ Print\ the\ network\ structure}}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00031}00031\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Perceptron\ Network\ Structure:"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00032}00032\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Number\ of\ layers:\ "{}}\ <<\ layers.size()\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{comment}{//\ For\ each\ layer\ in\ the\ network\ print\ the\ data}}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00034}00034\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ layers.size();\ ++i)}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00035}00035\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Layer\ "{}}\ <<\ i\ +\ 1\ <<\ \textcolor{stringliteral}{"{}:\ "{}};}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ layers[i].\_\_str\_\_(verbose);}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00038}00038\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{perceptron_network_8cpp_source_l00039}00039\ \}}
+
+\end{DoxyCode}

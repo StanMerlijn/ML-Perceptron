@@ -1,0 +1,128 @@
+\doxysection{Perceptron Class Reference}
+\hypertarget{class_perceptron}{}\label{class_perceptron}\index{Perceptron@{Perceptron}}
+
+
+A simple perceptron model for binary classification.  
+
+
+
+
+{\ttfamily \#include $<$perceptron.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_perceptron_a5291f385a6169ebc70a003a4dccd226f}{Perceptron}} (std\+::vector$<$ double $>$ weights, double bias, double learning\+Rate)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_perceptron}{Perceptron} with given weights, bias, and learning rate. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_perceptron_a7f895fb538e24722e305d1dc1717a989}{predict}} (const std\+::vector$<$ int $>$ \&inputs) const
+\begin{DoxyCompactList}\small\item\em Predicts the output for a given input vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}{train}} (const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&inputs, const std\+::vector$<$ int $>$ \&targets, int epochs)
+\begin{DoxyCompactList}\small\item\em Trains the perceptron using the given dataset. Using th learning rule to update the weights. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_perceptron_aded865cff86e00ce42a97125bb66b5ae}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (int verbose) const
+\begin{DoxyCompactList}\small\item\em Prints perceptron details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simple perceptron model for binary classification. 
+
+Definition at line \mbox{\hyperlink{perceptron_8hpp_source_l00020}{20}} of file \mbox{\hyperlink{perceptron_8hpp_source}{perceptron.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_perceptron_a5291f385a6169ebc70a003a4dccd226f}\index{Perceptron@{Perceptron}!Perceptron@{Perceptron}}
+\index{Perceptron@{Perceptron}!Perceptron@{Perceptron}}
+\doxysubsubsection{\texorpdfstring{Perceptron()}{Perceptron()}}
+{\footnotesize\ttfamily \label{class_perceptron_a5291f385a6169ebc70a003a4dccd226f} 
+Perceptron\+::\+Perceptron (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$}]{weights}{, }\item[{double}]{bias}{, }\item[{double}]{learning\+Rate}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_perceptron}{Perceptron} with given weights, bias, and learning rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weights} & Initial weights. \\
+\hline
+{\em bias} & Initial bias. \\
+\hline
+{\em learning\+Rate} & Learning rate for training. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{perceptron_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{perceptron_8cpp_source}{perceptron.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_perceptron_aded865cff86e00ce42a97125bb66b5ae}\index{Perceptron@{Perceptron}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!Perceptron@{Perceptron}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{class_perceptron_aded865cff86e00ce42a97125bb66b5ae} 
+void Perceptron\+::\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{int}]{verbose}{}\end{DoxyParamCaption}) const}
+
+
+
+Prints perceptron details. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em verbose} & Verbosity level. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{perceptron_8cpp_source_l00049}{49}} of file \mbox{\hyperlink{perceptron_8cpp_source}{perceptron.\+cpp}}.
+
+\Hypertarget{class_perceptron_a7f895fb538e24722e305d1dc1717a989}\index{Perceptron@{Perceptron}!predict@{predict}}
+\index{predict@{predict}!Perceptron@{Perceptron}}
+\doxysubsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily \label{class_perceptron_a7f895fb538e24722e305d1dc1717a989} 
+int Perceptron\+::predict (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{inputs}{}\end{DoxyParamCaption}) const}
+
+
+
+Predicts the output for a given input vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputs} & Input vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if activated, otherwise 0. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{perceptron_8cpp_source_l00016}{16}} of file \mbox{\hyperlink{perceptron_8cpp_source}{perceptron.\+cpp}}.
+
+\Hypertarget{class_perceptron_ad1002aba93bfc64708956b53b2e5a778}\index{Perceptron@{Perceptron}!train@{train}}
+\index{train@{train}!Perceptron@{Perceptron}}
+\doxysubsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily \label{class_perceptron_ad1002aba93bfc64708956b53b2e5a778} 
+void Perceptron\+::train (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&}]{inputs}{, }\item[{const std\+::vector$<$ int $>$ \&}]{targets}{, }\item[{int}]{epochs}{}\end{DoxyParamCaption})}
+
+
+
+Trains the perceptron using the given dataset. Using th learning rule to update the weights. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputs} & Input samples. \\
+\hline
+{\em targets} & Target outputs. \\
+\hline
+{\em epochs} & Number of training iterations. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{perceptron_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{perceptron_8cpp_source}{perceptron.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/stanislav/\+Github/\+Machine\+Learning/\+ML-\/\+Perceptron/src/header/\mbox{\hyperlink{perceptron_8hpp}{perceptron.\+hpp}}\item 
+/\+Users/stanislav/\+Github/\+Machine\+Learning/\+ML-\/\+Perceptron/src/\mbox{\hyperlink{perceptron_8cpp}{perceptron.\+cpp}}\end{DoxyCompactItemize}

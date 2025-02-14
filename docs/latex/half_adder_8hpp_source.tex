@@ -1,0 +1,65 @@
+\doxysection{half\+Adder.\+hpp}
+\hypertarget{half_adder_8hpp_source}{}\label{half_adder_8hpp_source}\index{/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/header/halfAdder.hpp@{/Users/stanislav/Github/MachineLearning/ML-\/Perceptron/src/header/halfAdder.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{perceptron_8hpp}{perceptron.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00005}00005\ \textcolor{preprocessor}{\#define\ EPOCHS\ 100}}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00007}\mbox{\hyperlink{structhalf_adder_output}{00007}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structhalf_adder_output}{halfAdderOutput}}}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00008}00008\ \{}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00009}00009\ \ \ \ \ \textcolor{keywordtype}{int}\ sum;}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00010}00010\ \ \ \ \ \textcolor{keywordtype}{int}\ carry;}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00011}00011\ \};}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00013}\mbox{\hyperlink{classhalf_adder}{00013}}\ \textcolor{keyword}{class\ }halfAdder}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00014}00014\ \{}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00015}00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00016}00016\ \ \ \ \ \textcolor{comment}{//\ Perceptrons\ for\ the\ half\ adder}}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ andGate;}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00018}00018\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ orGate;}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00019}00019\ \ \ \ \ \mbox{\hyperlink{class_perceptron}{Perceptron}}\ nanGate;}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00020}00020\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00021}00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00022}00022\ \ \ \ \ halfAdder()\ }
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00023}00023\ \ \ \ \ \ \ \ \ :\ andGate(\{0.1,\ 0.1\},\ 1,\ 0.1),}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00024}00024\ \ \ \ \ \ \ \ \ orGate(\{0.1,\ 0.1\},\ 1,\ 0.1),}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00025}00025\ \ \ \ \ \ \ \ \ nanGate(\{0.1,\ 0.1\},\ 1,\ 0.1)}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00026}00026\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Training\ data\ for\ the\ half\ adder}}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00028}00028\ \ \ \ \ \ \ \ \ std::vector<std::vector<int>>\ inputs\ =\ \{\{0,\ 0\},\ \{0,\ 1\},\ \{1,\ 0\},\ \{1,\ 1\}\};}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00029}00029\ \ \ \ \ \ \ \ \ std::vector<int>\ targetsAnd\ \ =\ \{0,\ 0,\ 0,\ 1\};}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00030}00030\ \ \ \ \ \ \ \ \ std::vector<int>\ targetsOr\ \ \ =\ \{0,\ 1,\ 1,\ 1\};}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00031}00031\ \ \ \ \ \ \ \ \ std::vector<int>\ targetsNand\ =\ \{1,\ 1,\ 1,\ 0\};}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00032}00032\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Train\ the\ perceptrons}}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00034}00034\ \ \ \ \ \ \ \ \ andGate.train(inputs,\ targetsAnd,\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00035}00035\ \ \ \ \ \ \ \ \ orGate.train(inputs,\ targetsOr,\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00036}00036\ \ \ \ \ \ \ \ \ nanGate.train(inputs,\ targetsNand,\ EPOCHS);}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00037}00037\ \}}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00040}00040\ \ \ \ \ \mbox{\hyperlink{structhalf_adder_output}{halfAdderOutput}}\ predict(\textcolor{keyword}{const}\ std::vector<int>\&\ x)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00041}00041\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00042}00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structhalf_adder_output}{halfAdderOutput}}\ output;}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00043}00043\ \ \ \ \ \ \ \ \ output.sum\ =\ andGate.predict(\{orGate.predict(x),\ nanGate.predict(x)\});}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00044}00044\ \ \ \ \ \ \ \ \ output.carry\ =\ andGate.predict(x);}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ output;}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00046}00046\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00048}00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \_\_str\_\_(\textcolor{keywordtype}{int}\ verbose)\textcolor{keyword}{\ const\ }}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00049}00049\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00050}00050\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Half\ Adder\ Structure:"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00051}00051\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}AND\ Gate:\ "{}};}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00052}00052\ \ \ \ \ \ \ \ \ andGate.\_\_str\_\_(verbose);}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00053}00053\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}OR\ Gate:\ "{}};}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00054}00054\ \ \ \ \ \ \ \ \ orGate.\_\_str\_\_(verbose);}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00055}00055\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}NAND\ Gate:\ "{}};}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00056}00056\ \ \ \ \ \ \ \ \ nanGate.\_\_str\_\_(verbose);}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00057}00057\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{half_adder_8hpp_source_l00059}00059\ \};}
+
+\end{DoxyCode}

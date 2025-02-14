@@ -1,0 +1,50 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}ML-\/perceptron}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Student}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Introduction}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Installing}{1}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}half\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Adder Class Reference}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}half\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Adder\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Output Struct Reference}{7}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Perceptron Class Reference}{7}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{8}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Constructor \& Destructor Documentation}{8}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}Perceptron()}{8}{subsubsection.4.3.2.1}%
+\contentsline {subsection}{\numberline {4.3.3}Member Function Documentation}{8}{subsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.3.1}\_\_str\_\_()}{8}{subsubsection.4.3.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.3.2}predict()}{8}{subsubsection.4.3.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3.3}train()}{9}{subsubsection.4.3.3.3}%
+\contentsline {section}{\numberline {4.4}Perceptron\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Layer Class Reference}{9}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{9}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Constructor \& Destructor Documentation}{9}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}PerceptronLayer()}{9}{subsubsection.4.4.2.1}%
+\contentsline {subsection}{\numberline {4.4.3}Member Function Documentation}{10}{subsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.1}\_\_str\_\_()}{10}{subsubsection.4.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.4.3.2}feedForward()}{10}{subsubsection.4.4.3.2}%
+\contentsline {section}{\numberline {4.5}Perceptron\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network Class Reference}{10}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{11}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Constructor \& Destructor Documentation}{11}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}PerceptronNetwork()}{11}{subsubsection.4.5.2.1}%
+\contentsline {subsection}{\numberline {4.5.3}Member Function Documentation}{11}{subsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.3.1}\_\_str\_\_()}{11}{subsubsection.4.5.3.1}%
+\contentsline {subsubsection}{\numberline {4.5.3.2}feedForward()}{11}{subsubsection.4.5.3.2}%
+\contentsline {chapter}{\numberline {5}File Documentation}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}half\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Adder.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{13}{section.5.1}%
+\contentsline {section}{\numberline {5.2}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/stanislav/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Github/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Machine\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Learning/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ML-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Perceptron/src/header/perceptron.hpp File Reference}{14}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{14}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}perceptron.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{14}{section.5.3}%
+\contentsline {section}{\numberline {5.4}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/stanislav/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Github/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Machine\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Learning/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ML-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Perceptron/src/header/perceptron\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Layer.hpp File Reference}{15}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{15}{subsection.5.4.1}%
+\contentsline {section}{\numberline {5.5}perceptron\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Layer.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{15}{section.5.5}%
+\contentsline {section}{\numberline {5.6}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/stanislav/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Github/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Machine\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Learning/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ML-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Perceptron/src/header/perceptron\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network.hpp File Reference}{16}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{16}{subsection.5.6.1}%
+\contentsline {section}{\numberline {5.7}perceptron\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{16}{section.5.7}%
+\contentsline {section}{\numberline {5.8}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/stanislav/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Github/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Machine\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Learning/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ML-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Perceptron/src/test/test.cpp File Reference}{17}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Detailed Description}{18}{subsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.8.2}Function Documentation}{18}{subsection.5.8.2}%
+\contentsline {subsubsection}{\numberline {5.8.2.1}TEST\_CASE()}{18}{subsubsection.5.8.2.1}%
+\contentsline {chapter}{Index}{19}{section*.12}%

@@ -1,0 +1,99 @@
+\doxysection{Perceptron\+Layer Class Reference}
+\hypertarget{class_perceptron_layer}{}\label{class_perceptron_layer}\index{PerceptronLayer@{PerceptronLayer}}
+
+
+Represents a layer of perceptrons in a neural network.  
+
+
+
+
+{\ttfamily \#include $<$perceptron\+Layer.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_perceptron_layer_a216eb59e0fd85f81a67f0d0a05495645}{Perceptron\+Layer}} (const std\+::vector$<$ \mbox{\hyperlink{class_perceptron}{Perceptron}} $>$ \&neurons)
+\begin{DoxyCompactList}\small\item\em Constructs a perceptron layer. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_perceptron_layer_ae7fbc7a864fc6e12d0ca1548e00877a9}{feed\+Forward}} (const std\+::vector$<$ int $>$ \&input) const
+\begin{DoxyCompactList}\small\item\em Feeds input forward through the layer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_perceptron_layer_aa3368bca667b3a6a72b1d36246a9fd36}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (int verbose) const
+\begin{DoxyCompactList}\small\item\em Prints layer details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a layer of perceptrons in a neural network. 
+
+Definition at line \mbox{\hyperlink{perceptron_layer_8hpp_source_l00020}{20}} of file \mbox{\hyperlink{perceptron_layer_8hpp_source}{perceptron\+Layer.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_perceptron_layer_a216eb59e0fd85f81a67f0d0a05495645}\index{PerceptronLayer@{PerceptronLayer}!PerceptronLayer@{PerceptronLayer}}
+\index{PerceptronLayer@{PerceptronLayer}!PerceptronLayer@{PerceptronLayer}}
+\doxysubsubsection{\texorpdfstring{PerceptronLayer()}{PerceptronLayer()}}
+{\footnotesize\ttfamily \label{class_perceptron_layer_a216eb59e0fd85f81a67f0d0a05495645} 
+Perceptron\+Layer\+::\+Perceptron\+Layer (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_perceptron}{Perceptron}} $>$ \&}]{neurons}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a perceptron layer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em neurons} & List of perceptrons. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{perceptron_layer_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{perceptron_layer_8cpp_source}{perceptron\+Layer.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_perceptron_layer_aa3368bca667b3a6a72b1d36246a9fd36}\index{PerceptronLayer@{PerceptronLayer}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!PerceptronLayer@{PerceptronLayer}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{class_perceptron_layer_aa3368bca667b3a6a72b1d36246a9fd36} 
+void Perceptron\+Layer\+::\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{int}]{verbose}{}\end{DoxyParamCaption}) const}
+
+
+
+Prints layer details. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em verbose} & Verbosity level. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{perceptron_layer_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{perceptron_layer_8cpp_source}{perceptron\+Layer.\+cpp}}.
+
+\Hypertarget{class_perceptron_layer_ae7fbc7a864fc6e12d0ca1548e00877a9}\index{PerceptronLayer@{PerceptronLayer}!feedForward@{feedForward}}
+\index{feedForward@{feedForward}!PerceptronLayer@{PerceptronLayer}}
+\doxysubsubsection{\texorpdfstring{feedForward()}{feedForward()}}
+{\footnotesize\ttfamily \label{class_perceptron_layer_ae7fbc7a864fc6e12d0ca1548e00877a9} 
+std\+::vector$<$ int $>$ Perceptron\+Layer\+::feed\+Forward (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{input}{}\end{DoxyParamCaption}) const}
+
+
+
+Feeds input forward through the layer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Input vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Output vector after applying all perceptrons. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{perceptron_layer_8cpp_source_l00016}{16}} of file \mbox{\hyperlink{perceptron_layer_8cpp_source}{perceptron\+Layer.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/stanislav/\+Github/\+Machine\+Learning/\+ML-\/\+Perceptron/src/header/\mbox{\hyperlink{perceptron_layer_8hpp}{perceptron\+Layer.\+hpp}}\item 
+/\+Users/stanislav/\+Github/\+Machine\+Learning/\+ML-\/\+Perceptron/src/\mbox{\hyperlink{perceptron_layer_8cpp}{perceptron\+Layer.\+cpp}}\end{DoxyCompactItemize}

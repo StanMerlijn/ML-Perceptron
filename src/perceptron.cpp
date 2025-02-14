@@ -32,7 +32,9 @@ void Perceptron::train(const std::vector<std::vector<int>>& inputs, const std::v
     // Train the perceptron
     for (int epoch = 0; epoch < epochs; epoch++) {
         for (int i = 0; i < inputs.size(); i++) {
+            // get the prediction 
             double pred = predict(inputs[i]);
+            // Calculate the error based of the target value
             double error = targets[i] - pred;
             // Update each weight based on the input value
             for (int j = 0; j < weights.size(); j++) {

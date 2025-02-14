@@ -52,5 +52,5 @@ public:
 private:
         std::vector<double> weights; /**< Weights for the perceptron. */
         double bias; /**< Bias term. */
-        double learningRate; /**< Learning rate for weight updates. */
+        double learningRate; /**< Learning rate for weight updates. */ 
 };

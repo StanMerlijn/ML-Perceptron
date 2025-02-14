@@ -11,7 +11,7 @@ In this repo we are going to implement and test perceptrons, perceptron layers a
 
 ## Documentation
 For this assignment, documentation was generated using Doxygen. 
-The LaTeX documentation can be found [here](docs/latex/refman.pdf) and if you want to run the HTML local website, you can open the [index.html](docs/html/index.html).
+The LaTeX documentation can be found [here](docs/latex/refman.pdf) and if you want to run the HTML local website, you can open the [index.html](docs/html/index.html) in a browser.
 
 ## Installing
 Enter the test dir then
